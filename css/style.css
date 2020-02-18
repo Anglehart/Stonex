@@ -15,24 +15,28 @@ body {
   padding: 13px 10px 11px 38px;
   font-size: 15.2px;
   background-repeat: no-repeat;
-  width: 163px;
 }
 .header-email {
   background-image: url(../images/email.png);
   background-position: 15px 21px;
   border-right: 1px solid #618cbf;
+  width: 163px;
 }
 .header-phone {
   background-image: url(../images/phone.png);
   background-position: 17px 18px;
   padding-left: 39px;
+  width: 170px;
 }
-
 .header-search {
   display: inline-block;
   padding: 10px;
   background-color: #000000;
-  width: 45px;
+  width: 46px;
   height: 46px;
   vertical-align: top;
+  background-image: url(../images/search.png);
+  background-repeat: no-repeat;
+  background-position: 58% 50%;
+  cursor: pointer;
 }
