@@ -1,0 +1,38 @@
+
+body {
+  font-family: 'Open Sans', sans-serif !important;
+}
+.row {
+  width: 1140px;
+  margin: auto !important;
+}
+.header-contact {
+  background-color: #4273ae;
+}
+.header-phone, .header-email {
+  display: inline-block;
+  color: #ffffff;
+  padding: 13px 10px 11px 38px;
+  font-size: 15.2px;
+  background-repeat: no-repeat;
+  width: 163px;
+}
+.header-email {
+  background-image: url(../images/email.png);
+  background-position: 15px 21px;
+  border-right: 1px solid #618cbf;
+}
+.header-phone {
+  background-image: url(../images/phone.png);
+  background-position: 17px 18px;
+  padding-left: 39px;
+}
+
+.header-search {
+  display: inline-block;
+  padding: 10px;
+  background-color: #000000;
+  width: 45px;
+  height: 46px;
+  vertical-align: top;
+}
