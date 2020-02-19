@@ -8,9 +8,9 @@ body {
 }
 .header-contact {
   background-color: #4273ae;
+  display: flex;
 }
 .header-phone, .header-email {
-  display: inline-block;
   color: #ffffff;
   padding: 13px 10px 11px 38px;
   font-size: 15.2px;
@@ -29,7 +29,6 @@ body {
   width: 170px;
 }
 .header-search {
-  display: inline-block;
   padding: 10px;
   background-color: #000000;
   width: 46px;
