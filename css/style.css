@@ -90,3 +90,36 @@ nav.stroke ul li a:after {
 nav.stroke ul li a:hover:after {
   width: 100%;
 }
+.main-image {
+  text-align: center;
+  background-image: url("/images/main-image.png");
+  height: 884px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-image h1 {
+  margin-top: calc(50% - 150px);
+  font-size: 86px;
+  font-weight: bold;
+  color:#fff;
+  line-height: 80px;
+}
+.price-block {
+  width: 400px;
+  height: 433px;
+  position: relative;
+  left: calc(50% - 572px);
+  background: #457abc;
+  top: -207px;
+  box-shadow: 6px 6px 15px -1px #6a6a6a, -6px 6px 15px -1px #6a6a6a;
+  padding: 38px 58px;
+}
+.price-images {
+  display: flex;
+  justify-content: space-around;
+}
+.price-block hr {
+  margin-top: 31px;
+  border-top: 1px solid
+  rgba(255, 255, 255, 0.5);
+}
