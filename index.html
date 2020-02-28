@@ -51,11 +51,18 @@
         <img src="/images/warranty.png">
       </div>
       <hr></hr>
+      <h2>Базовая цена</h2>
+      <div id="price">226 000 ₽</div>
+      <p><input type="checkbox" name="uhf-modem" id="uhf-modem">Активация УКВ модема</p>
     </div>
-
   </header>
   <section style="height: 500px; width: 100%; background: gray" class="parallax__group">
   </section>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    if (document.getElementsByName('uhf-modem').checked) {
+      document.getElementById('price').value = '230 000 ₽'
+    }
+  </script>
 </body>
 </html>
