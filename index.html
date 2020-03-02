@@ -52,17 +52,21 @@
       </div>
       <hr></hr>
       <h2>Базовая цена</h2>
-      <div id="price">226 000 ₽</div>
-      <p><input type="checkbox" name="uhf-modem" id="uhf-modem">Активация УКВ модема</p>
+      <div id="price"></div>
+      <p><input type="checkbox" id="uhfCheck" onchange="uhfCheck()"><label for="uhfCheck">Активация УКВ модема</label></p>
+      <div class="callback">
+        <img src="/images/callback.png">
+        <button type="button" class="callback-button btn" data-toggle="modal" data-target="#feedbackFormModal">
+      	 Запросить счет
+        </button>
+      </div>
     </div>
   </header>
   <section style="height: 500px; width: 100%; background: gray" class="parallax__group">
   </section>
+
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script type="text/javascript">
-    if (document.getElementsByName('uhf-modem').checked) {
-      document.getElementById('price').value = '230 000 ₽'
-    }
-  </script>
+  <script src="https://use.fontawesome.com/aa2391fb57.js"></script>
+  <script src="functions.js"></script>
 </body>
 </html>
