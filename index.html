@@ -21,7 +21,7 @@
     <div class="container-fluid no-gutters">
       <div class="row no-gutters">
         <div class="col-xl-4 header-logo">
-          <a href="/"><img src="images/logo.png"></a>
+          <a href="/"><img src="assets/logo.png"></a>
         </div>
         <div class="col-xl-1"></div>
         <div class="col-xl-7 header-menu">
@@ -46,23 +46,37 @@
     </div>
     <div class="price-block">
       <div class="price-images">
-        <img src="/images/atlas.png">
-        <img src="/images/made-in.png">
-        <img src="/images/warranty.png">
+        <img src="/assets/atlas.png">
+        <img src="/assets/made-in.png">
+        <img src="/assets/warranty.png">
       </div>
       <hr></hr>
       <h2>Базовая цена</h2>
       <div id="price"></div>
       <p><input type="checkbox" id="uhfCheck" onchange="uhfCheck()"><label for="uhfCheck">Активация УКВ модема</label></p>
       <div class="callback">
-        <img src="/images/callback.png">
+        <img src="/assets/callback.png">
         <button type="button" class="callback-button btn" data-toggle="modal" data-target="#feedbackFormModal">
       	 Запросить счет
         </button>
       </div>
     </div>
   </header>
-  <section style="height: 500px; width: 100%; background: gray" class="parallax__group">
+  <section class="photogallery">
+    <div class="photogallery-inner">
+      <div class="photos">
+        <div class="pic1"><img src="/images/pic1.png"></div>
+        <div class="pic2"><img src="/images/pic2.png"></div>
+        <div class="pic3"><img src="/images/pic3.png"></div>
+        <div class="pic4"><img src="/images/pic4.png"></div>
+        <div class="pic5"><img src="/images/pic5.png"></div>
+        <div class="pic6"><img src="/images/pic6.png"></div>
+        <div class="pic7"><img src="/images/pic7.png"></div>
+        <div class="arrow">
+          <a onclick="allPhotos()"><img id="arrow" src="/assets/arrow-right.png"></a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
