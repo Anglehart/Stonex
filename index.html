@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 </head>
 <body>
   <header>
@@ -65,13 +66,39 @@
   <section class="photogallery">
     <div class="photogallery-inner">
       <div class="photos">
-        <div class="pic1"><img src="/images/pic1.png"></div>
-        <div class="pic2"><img src="/images/pic2.png"></div>
-        <div class="pic3"><img src="/images/pic3.png"></div>
-        <div class="pic4"><img src="/images/pic4.png"></div>
-        <div class="pic5"><img src="/images/pic5.png"></div>
-        <div class="pic6"><img src="/images/pic6.png"></div>
-        <div class="pic7"><img src="/images/pic7.png"></div>
+        <div class="pic1">
+          <a data-fancybox="gallery" href="/images/full1.jpg"><img src="/images/pic1.png"></a>
+        </div>
+        <div class="pic2">
+          <a data-fancybox="gallery" href="/images/full2.jpg"><img src="/images/pic2.png"></a>
+        </div>
+        <div class="pic3">
+          <a data-fancybox="gallery" href="/images/full3.jpg"><img src="/images/pic3.png"></a>
+        </div>
+        <div class="pic4">
+          <a data-fancybox="gallery" href="/images/full4.jpg"><img src="/images/pic4.png"></a>
+        </div>
+        <div class="pic5">
+          <a data-fancybox="gallery" href="/images/full5.jpg"><img src="/images/pic5.png"></a>
+        </div>
+        <div class="pic6">
+          <a data-fancybox="gallery" href="/images/full6.jpg"><img src="/images/pic6.png"></a>
+        </div>
+        <div class="pic7">
+          <a data-fancybox="gallery" href="/images/full7.jpg"><img src="/images/pic7.png"></a>
+        </div>
+        <div class="pic8 addpic">
+          <a data-fancybox="gallery" href="/images/full8.jpg"><img src="/images/pic8.png"></a>
+        </div>
+        <div class="pic9 addpic">
+          <a data-fancybox="gallery" href="/images/full9.jpg"><img src="/images/pic9.png"></a>
+        </div>
+        <div class="pic10 addpic">
+          <a data-fancybox="gallery" href="/images/full10.jpg"><img src="/images/pic10.png"></a>
+        </div>
+        <div class="pic11 addpic">
+          <a data-fancybox="gallery" href="/images/full11.jpg"><img src="/images/pic11.png"></a>
+        </div>
         <div class="arrow">
           <a onclick="allPhotos()"><img id="arrow" src="/assets/arrow-right.png"></a>
         </div>
@@ -81,6 +108,8 @@
 
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script src="https://use.fontawesome.com/aa2391fb57.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="functions.js"></script>
 </body>
 </html>

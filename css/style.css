@@ -225,11 +225,20 @@ input:disabled + label:before {
 .pic5 { grid-area: pic5; }
 .pic6 { grid-area: pic6; }
 .pic7 { grid-area: pic7; }
+.pic8 { grid-area: pic8; }
+.pic9 { grid-area: pic9; }
+.pic10 { grid-area: pic10; }
+.pic11 { grid-area: pic11; }
 .arrow { grid-area: arrow; }
 .arrow a {
-  margin-top: 25%;
+  margin-top: 40%;
   display: block;
   transform: rotate(180deg);
   cursor: pointer;
-  transition: 0.5s;
+}
+.arrow img {
+  transition: all 0.5s ease 0s;
+}
+.addpic {
+  display: none;
 }
