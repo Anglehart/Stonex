@@ -250,14 +250,15 @@ input:disabled + label:before {
 .addpic {
   display: none;
 }
-/*tabs*/
+
+/*Блок закладок*/
 .tabs-section {
   width: 100%;
   background-color: #ecf0f6;
 }
 .tabs-section-inner {
   margin: auto;
-  width: 1140px;
+  max-width: 1140px;
   padding-top: 105px;
 }
 /* Style the tab */
@@ -266,8 +267,6 @@ input:disabled + label:before {
   display: flex;
   border-radius: 27px;
 }
-
-/* Style the buttons inside the tab */
 .tab button {
   background-color: #87919a;
   float: left;
@@ -306,25 +305,77 @@ input:disabled + label:before {
 .tablinks:last-child {
   border-radius: 0px 27px 27px 0px;
 }
-/* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #007bc0;
 }
-
-/* Create an active/current tablink class */
 .tab button.active {
   background-color: #007bc0;
 }
 .tab button.active:after{
   border-top: 12px solid #007bc0;
 }
-/* Style the tab content */
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
 }
 button:focus {
   outline: none !important;
+}
+#kit {
+  text-align: center;
+  margin-top: 100px;
+  min-height: 990px;
+}
+.kit-detail {
+  display: block;
+  position: absolute;
+}
+.kit-detail:nth-child(2) {
+  margin-top: -710px;
+  margin-left: 120px;
+}
+.kit-detail:nth-child(3) {
+  margin-top: -430px;
+  margin-left: 90px;
+}
+.kit-detail:nth-child(4) {
+  margin-top: -184px;
+  margin-left: 205px;
+}
+.kit-detail:nth-child(5) {
+  margin-top: -146px;
+  margin-left: 468px;
+}
+.kit-detail:nth-child(6) {
+  margin-top: -158px;
+  margin-left: 731px;
+}
+.kit-detail:nth-child(7) {
+  margin-top: -431px;
+  margin-left: 819px;
+}
+.kit-detail:nth-child(8) {
+  margin-top: -677px;
+  margin-left: 816px;
+}
+.kit-detail:nth-child(2) p {
+  margin-top: 17px;
+}
+.kit-detail:nth-child(3) p {
+  margin-top: 30px;
+}
+.kit-detail:nth-child(4) p {
+  margin-top: 7px;
+}
+.kit-detail:nth-child(5) p {
+  margin-top: 45px;
+}
+.kit-detail:nth-child(6) p {
+  margin-top: 34px;
+}
+.kit-detail:nth-child(7) p {
+  margin-top: 33px;
+}
+.kit-detail:nth-child(8) p {
+  margin-top: 50px;
 }
