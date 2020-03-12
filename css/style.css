@@ -454,8 +454,9 @@ button:focus {
 }
 #book1 {
   right: 10%;
+  top: 10%;
 }
 #book2{
   left: 10%;
-  top: 10%;
+  top: 20%;
 }
