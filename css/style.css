@@ -252,9 +252,11 @@ input:disabled + label:before {
 }
 
 /*Блок закладок*/
-.tabs-section {
+#tabs-section {
   width: 100%;
   background-color: #ecf0f6;
+  /*background-image: url("../assets/docs-back.png");*/
+  background-position: top center;
 }
 .tabs-section-inner {
   margin: auto;
@@ -262,12 +264,12 @@ input:disabled + label:before {
   padding-top: 105px;
 }
 /* Style the tab */
-.tab {
+#tab {
   overflow: hidden;
   display: flex;
   border-radius: 27px;
 }
-.tab button {
+#tab button {
   background-color: #87919a;
   float: left;
   border: none;
@@ -279,11 +281,19 @@ input:disabled + label:before {
   color: #fff;
   margin-bottom: 15px;
   position: relative;
+  border-left: 1px solid #9a9ea8;
+  border-right: 1px solid #87919a;
+}
+#tab button:first-child, #tab button:first-child:hover {
+  border-left: none !important;
+}
+#tab button:last-child, #tab button:last-child:hover {
+  border-right: none !important;
 }
 .tablinks {
   flex: 1;
 }
-.tab button:after {
+#tab button:after {
   content: '';
   border: 12px solid transparent;
   position: absolute;
@@ -293,7 +303,7 @@ input:disabled + label:before {
   width: 0;
   transition: 0.3s;
 }
-.tab button:hover:after {
+#tab button:hover:after {
   border-top: 12px solid #007bc0;
 }
 .tablinks:nth-child(4) {
@@ -305,17 +315,17 @@ input:disabled + label:before {
 .tablinks:last-child {
   border-radius: 0px 27px 27px 0px;
 }
-.tab button:hover {
+#tab button.active, #tab button:hover {
   background-color: #007bc0;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
 }
-.tab button.active {
-  background-color: #007bc0;
-}
-.tab button.active:after{
+#tab button.active:after{
   border-top: 12px solid #007bc0;
 }
 .tabcontent {
   display: none;
+  min-height: 500px;
 }
 button:focus {
   outline: none !important;
@@ -427,4 +437,25 @@ button:focus {
 }
 .features-table td:nth-child(odd) {
   border-top: 1px solid #4387bd
+}
+#docs img {
+  margin: auto;
+  display: block;
+  margin-top: 92px;
+  max-width: 100%;
+}
+#docs {
+  position: relative;
+  min-height: 700px;
+}
+/*Parallax*/
+#book1, #book2 {
+  position: absolute;
+}
+#book1 {
+  right: 10%;
+}
+#book2{
+  left: 10%;
+  top: 10%;
 }

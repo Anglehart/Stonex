@@ -46,3 +46,25 @@ function openCity(evt, cityName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+/*Функция для смены фона в закладке Документы*/
+document.getElementById("tab").addEventListener('click', (event) => {
+  document.getElementById("tabs-section").style.backgroundImage = "none";
+  if (event.target.id == "docs-button"){
+    document.getElementById("tabs-section").style.backgroundImage = "url(../assets/docs-back.png)";
+  }
+})
+
+/*Параллакс*/
+  var body = document.getElementById("tabs-section"),
+      startX = -50,
+      startY = -50,
+      w = document.documentElement.offsetWidth,
+      h = document.documentElement.offsetHeight;
+
+	body.addEventListener('mousemove', function(evt){
+    var posX = Math.round(evt.clientX / w * startX)
+    var posY = Math.round(evt.clientY / h * startY)
+    document.getElementById("book1").style.margin = posY + 'px ' + posX + 'px'
+    document.getElementById("book2").style.margin = -posY + 'px ' + posX + 'px'
+  })
