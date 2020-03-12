@@ -51,7 +51,7 @@ document.getElementById("defaultOpen").click();
 document.getElementById("tab").addEventListener('click', (event) => {
   document.getElementById("tabs-section").style.backgroundImage = "none";
   if (event.target.id == "docs-button"){
-    document.getElementById("tabs-section").style.backgroundImage = "url(../assets/docs-back.png)";
+    document.getElementById("tabs-section").style.backgroundImage = "url(assets/docs-back.png)";
   }
 })
 

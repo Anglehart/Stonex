@@ -255,7 +255,6 @@ input:disabled + label:before {
 #tabs-section {
   width: 100%;
   background-color: #ecf0f6;
-  /*background-image: url("../assets/docs-back.png");*/
   background-position: top center;
 }
 .tabs-section-inner {
