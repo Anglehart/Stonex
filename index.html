@@ -117,7 +117,7 @@
       </div>
 
       <div id="kit" class="tabcontent">
-        <img src="images/kit-back.png">
+        <!--<img src="images/kit-back.png">-->
         <div class="kit-detail">
           <img src="images/det1.png">
           <p>Антенна</p>
@@ -155,11 +155,176 @@
       </div>
 
       <div id="features" class="tabcontent">
-        <h3>Tokyo</h3>
-        <p>Tokyo is the capital of Japan.</p>
+        <div class="container-fluid no-gutters">
+          <div class="row">
+            <div class="col-xl-6">
+              <h3>Основные характеристики</h3>
+              <table class="features-table">
+                <tr>
+                  <td>Спутниковые сигналы</td>
+                  <td>
+                      GPS: L1CA, L1P, L1C, L2P, L2C,L5<br>
+                      ГЛОНАСС:L1, L1P, L2, L2P <br>
+                      BEIDOU: B1, B2, B3<br>
+                      GALILEO: E1, E5A, E5B<br>
+                      QZSS: L1CA, L1C, L2C, L5<br>
+                      SBAS: L1CA, L5<br>
+                      L-Band Atlas H10 / H30 / H100
+                  </td>
+                </tr>
+                <tr>
+                  <td>Каналы</td>
+                  <td>555</td>
+                </tr>
+                <tr>
+                  <td>Частота позиционирования</td>
+                  <td>5Hz</td>
+                </tr>
+                <tr>
+                  <td>Повторный захват</td>
+                  <td>< 1 сек</td>
+                </tr>
+                <tr>
+                  <td>Инициализация RTK</td>
+                  <td>Обычно < 10 сек</td>
+                </tr>
+                <tr>
+                  <td>Время инициализации</td>
+                  <td>Обычно < 15 сек</td>
+                </tr>
+                <tr>
+                  <td>Качество инициализации</td>
+                  <td>> 99.9%</td>
+                </tr>
+                <tr>
+                  <td>Внутренняя память</td>
+                  <td>8 Гб</td>
+                </tr>
+                <tr>
+                  <td>Микро SD карта</td>
+                  <td>Слот под карту до 32 Гб</td>
+                </tr>
+              </table>
+              <h3>Точность</h3>
+              <table class="features-table">
+                <tr>
+                  <td>Высокая точность статической съемки</td>
+                  <td>В плане: 2.5 мм + 0.1 ppm (RMS)<br>
+                      По высоте: 3.5 мм + 0.4 ppm (RMS)</td>
+                </tr>
+                <tr>
+                  <td>Кодовая дифференциальная съемка </td>
+                  <td>В плане: 0.25 м (RMS)<br>
+                      По высоте: 0.45 м (RMS)</td>
+                </tr>
+                <tr>
+                  <td>SBAS позиционирование (обычно)</td>
+                  <td>В плане: 0.30 м (RMS)<br>
+                      По высоте: 0.60 м (RMS)</td>
+                </tr>
+                <tr>
+                  <td>RTK съемка</td>
+                  <td>В плане: 8 мм + 1 ppm (RMS)<br>
+                      По высоте: 15 мм + 1 ppm (RMS)</td>
+                </tr>
+              </table>
+              <h3>Встроенное радио</h3>
+              <table class="features-table">
+                <tr>
+                  <td>Тип</td>
+                  <td>Tx-Rx</td>
+                </tr>
+                <tr>
+                  <td>Диапазон частот</td>
+                  <td>410 - 470 Мгц</td>
+                </tr>
+                <tr>
+                  <td>Разделение каналов</td>
+                  <td>12,5/25 КГц</td>
+                </tr>
+                <tr>
+                  <td>Расстрояние</td>
+                  <td>3-4 км - застроенная территория,<br>
+                      до 10 км - на открытой местности.</td>
+                </tr>
+              </table>
+            </div>
+            <div class="col-xl-6">
+              <h3>Связь</h3>
+              <table class="features-table">
+                <tr>
+                  <td>Вход/выход</td>
+                  <td>7-pins Lemo and 5-pins Lemo интерфейс. Мультикабель с USB для соединения с ПК.</td>
+                </tr>
+                <tr>
+                  <td>Bluetooth</td>
+                  <td>V2.1 + EDR, V4.0</td>
+                </tr>
+                <tr>
+                  <td>Wi-Fi</td>
+                  <td>802.11 b/g/n</td>
+                </tr>
+                <tr>
+                  <td>Web интерфейс</td>
+                  <td>Для обновления программного обеспечения, управления состоянием и настройками, загрузки данных и др. через смартфон, планшет или другие подключенные к интернету электронные устройства.</td>
+                </tr>
+                <tr>
+                  <td>Протоколы</td>
+                  <td>RTCM 2.1, 2.3, 3.0, 3.1, 3.2, 3.3, CMR, CMR+, RTCA</td>
+                </tr>
+                <tr>
+                  <td>NMEA</td>
+                  <td>GGA. ZDA. GSA. GSV, GST, VТG, RMC, GLL</td>
+                </tr>
+              </table>
+              <h3>Питание</h3>
+              <table class="features-table">
+                <tr>
+                  <td>Батарея</td>
+                  <td>2 перезаряжаемые и заменяемые батареи 7.2V - 3400 mAh</td>
+                </tr>
+                <tr>
+                  <td>Внешнее питание</td>
+                  <td>9-22В DC внешнего питания с защитой от перенапряжения</td>
+                </tr>
+                <tr>
+                  <td>Время работы</td>
+                  <td>До 12 часов (2 батареи с горячей заменой)</td>
+                </tr>
+                <tr>
+                  <td>Время зарядки (2 батареи)</td>
+                  <td>Обычно 4 часа</td>
+                </tr>
+              </table>
+              <h3>Физические характеристики</h3>
+              <table class="features-table">
+                <tr>
+                  <td>Вес</td>
+                  <td>1,19 кг (с одной батареей)<br>1,3 кг (с двумя батареями)</td>
+                </tr>
+                <tr>
+                  <td>Рабочая температура</td>
+                  <td>-40°С до 65°С (-22°F до 149°F)</td>
+                </tr>
+                <tr>
+                  <td>Температура хранения</td>
+                  <td>-40°C to 80°C IP67</td>
+                </tr>
+                <tr>
+                  <td>Пыле- влагозащита</td>
+                  <td>Протестирован на погружение на 1 м и на 100% влажность</td>
+                </tr>
+                <tr>
+                  <td>Защита от падения</td>
+                  <td>Выдерживает падение на вехе 2 м на бетонный пол</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div id="table" class="tabcontent">
+      <div id="compare-table" class="tabcontent">
         <h3>Tokyo</h3>
         <p>Tokyo is the capital of Japan.</p>
       </div>
