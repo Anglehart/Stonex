@@ -5,7 +5,7 @@ body {
 header {
   width: 100%;
   height: 1460px;
-  background-image: url(images/header-background.png);
+  background-image: url(../assets/header-background.png);
   background-position: center;
   background-position: -10px 0px;
 }
@@ -92,7 +92,7 @@ nav.stroke ul li a:hover:after {
 }
 .main-image {
   text-align: center;
-  background-image: url("images/main-image.png");
+  background-image: url("../assets/main-image.png");
   height: 884px;
   background-position: center;
   background-repeat: no-repeat;
@@ -189,7 +189,7 @@ input:disabled + label:before {
 .photogallery {
   width: 100%;
   height: 1035px;
-  background: url(images/photoback.png), #1a2632;
+  background: url(../assets/photoback.png), #1a2632;
   background-position: top center;
   background-repeat: no-repeat;
 }
