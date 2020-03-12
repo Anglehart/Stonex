@@ -106,14 +106,14 @@
       </div>
     </div>
   </section>
-  <section class="tabs-section">
+  <section id="tabs-section">
     <div class="tabs-section-inner">
-      <div class="tab">
+      <div id="tab">
         <button class="tablinks" onclick="openCity(event, 'kit')" id="defaultOpen">СОСТАВ КОМПЛЕКТА</button>
         <button class="tablinks" onclick="openCity(event, 'benefits')">ПРЕИМУЩЕСТВА</button>
         <button class="tablinks" onclick="openCity(event, 'features')">ХАРАКТЕРИСТИКИ</button>
-        <button class="tablinks" onclick="openCity(event, 'table')">СРАВНИТЕЛЬНАЯ ТАБЛИЦА</button>
-        <button class="tablinks" onclick="openCity(event, 'docs')">ДОКУМЕНТАЦИЯ</button>
+        <button class="tablinks" onclick="openCity(event, 'compare-table')">СРАВНИТЕЛЬНАЯ ТАБЛИЦА</button>
+        <button id="docs-button" class="tablinks" onclick="openCity(event, 'docs')">ДОКУМЕНТАЦИЯ</button>
       </div>
 
       <div id="kit" class="tabcontent">
@@ -330,8 +330,8 @@
       </div>
 
       <div id="docs" class="tabcontent">
-        <h3>Tokyo</h3>
-        <p>Tokyo is the capital of Japan.</p>
+        <img src="../assets/book2.png" alt="" id="book2">
+        <img src="../assets/book1.png" alt="" id="book1">
       </div>
     </div>
   </section>
@@ -340,5 +340,4 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="functions.js"></script>
-</body>
 </html>
