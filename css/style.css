@@ -111,7 +111,7 @@ nav.stroke ul li a:hover:after {
   left: calc(50% - 572px);
   background: #007bc0;
   top: -207px;
-  box-shadow: 6px 6px 15px -1px #6a6a6a, -6px 6px 15px -1px #6a6a6a;
+  box-shadow: 6px 6px 15px -1px #4f4e4e87, -6px 6px 15px -1px #4f4e4e87;
   padding: 38px 58px;
 }
 .price-images {
@@ -437,12 +437,6 @@ button:focus {
 .features-table td:nth-child(odd) {
   border-top: 1px solid #4387bd
 }
-#docs img {
-  margin: auto;
-  display: block;
-  margin-top: 92px;
-  max-width: 100%;
-}
 #docs {
   position: relative;
   min-height: 700px;
@@ -450,6 +444,10 @@ button:focus {
 /*Parallax*/
 #book1, #book2 {
   position: absolute;
+  margin: auto;
+  display: block;
+  margin-top: 92px;
+  max-width: 100%;
 }
 #book1 {
   right: 10%;
@@ -458,4 +456,41 @@ button:focus {
 #book2{
   left: 10%;
   top: 20%;
+}
+.download-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.download-block {
+  width: 335px;
+  height: 159px;
+  background-color:  #007bc0;
+  margin: 905px 20px 0px;
+  transition: 0.3s;
+  background-image: url(../assets/pdf.png);
+  background-repeat: no-repeat;
+  background-position: 21px center;
+  box-sizing: content-box;
+  border: 0px solid #007bc0;
+}
+.download-block:hover {
+  border: 10px solid #007bc0;
+  transition: 0.3s;
+}
+.download-block a {
+  display: block;
+  position: relative;
+  top: 35%;
+  left: 35%;
+  color: #fff;
+  text-decoration: none;
+}
+.download-block a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.download-block hr {
+  width: 80%;
+  border-bottom: 1px dotted #fff;
+  margin-top: 70px;
 }
