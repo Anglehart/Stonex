@@ -440,7 +440,10 @@ button:focus {
 }
 #docs {
   position: relative;
-  min-height: 700px;
+  min-height: 1100px;
+}
+#features {
+  padding-bottom: 50px;
 }
 /*Parallax*/
 #book1, #book2 {
@@ -519,4 +522,67 @@ button:focus {
 .video-section .row {
   min-height: 875px;
   background: url('../assets/video-back-product.png') no-repeat bottom right
+}
+
+/*Footer*/
+footer {
+  width: 100%;
+  background: #0874b2;
+}
+footer .row {
+  padding: 45px 0;
+}
+.footer-our-logo, .footer-stonex-logo {
+  align-items: baseline;
+  display: flex;
+}
+.footer-our-logo img, .footer-stonex-logo img {
+  vertical-align: baseline;
+}
+.footer-about hr {
+  border-top: 1px solid #fff;
+  width: 87%;
+  margin-left: 0;
+  margin-top: 5px;
+}
+.footer-social hr {
+  border-top: 1px solid #fff;
+  margin-right: 0;
+  margin-top: 5px;
+}
+footer h4 {
+  color: #fff;
+  font-size: 16px;
+}
+footer p {
+  color: #fff;
+  font-size: 14px;
+  margin-top: 19px;
+  line-height: 22px;
+  width: 95%;
+}
+.footer-about span {
+  color: #182532;
+}
+.footer-about a {
+  color: #182532;
+}
+.footer-about a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-social {
+  padding-left: 38px !important;
+}
+.social-block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+.footer-social p {
+  font-size: 11px;
+}
+.footer-stick {
+  margin-left: 23px;
 }
