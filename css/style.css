@@ -200,13 +200,15 @@ input:disabled + label:before {
   background:#0874b2;
   transition: 0.5s;
 }
-.photo-title {
-  position: absolute;
-  margin-left: -332px;
-  margin-top: 190px;
+.section-title {
   border-top: 1px dotted black;
   padding-top: 14px;
   width: 300px;
+}
+.photo-title{
+  margin-left: -332px;
+  position: absolute;
+  margin-top: 190px;
 }
 .photos {
   height: 100%;
@@ -334,7 +336,7 @@ button:focus {
 #kit {
   text-align: center;
   margin-top: 100px;
-  min-height: 990px;
+  min-height: 1118px;
   background-image: url("../images/kit-back.png");
   background-position: center 8px;
   background-repeat: no-repeat;
@@ -395,7 +397,6 @@ button:focus {
 }
 
 /*features tab*/
-
 #features h3 {
   font-size: 15px;
   line-height: 20px;
@@ -476,6 +477,7 @@ button:focus {
 .download-block:hover {
   border: 10px solid #007bc0;
   transition: 0.3s;
+  margin-top: 895px;
 }
 .download-block a {
   display: block;
@@ -493,4 +495,28 @@ button:focus {
   width: 80%;
   border-bottom: 1px dotted #fff;
   margin-top: 70px;
+}
+/*Video*/
+.video-section {
+  width: 100%;
+  background: url('../assets/video-back.png') no-repeat center;
+}
+.video-title{
+  margin-bottom: 45px;
+  margin-top: 100px;
+}
+.youtube-button {
+  display: block;
+  margin-top: 20px;
+  background-image: url('../assets/youtube-button.png');
+  background-repeat: no-repeat;
+  width: 165px;
+  height: 26px;
+}
+.youtube-button:hover {
+  background-image: url('../assets/youtube-button-hover.png');
+}
+.video-section .row {
+  min-height: 875px;
+  background: url('../assets/video-back-product.png') no-repeat bottom right
 }
