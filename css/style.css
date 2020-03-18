@@ -205,7 +205,7 @@ input:disabled + label:before {
   border-top: 1px dotted black;
   padding-top: 14px;
   width: 300px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
 }
 .photo-title{
