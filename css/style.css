@@ -4,10 +4,10 @@ body {
 }
 header {
   width: 100%;
-  height: 1460px;
+  height: 1455px;
   background-image: url(../assets/header-background.png);
   background-position: center;
-  background-position: -10px 0px;
+  background-repeat: no-repeat;
 }
 .row {
   max-width: 1140px;
@@ -533,6 +533,9 @@ button:focus {
 .video-section .row {
   min-height: 875px;
   background: url('../assets/video-back-product.png') no-repeat bottom right
+}
+#big-video, #small-video {
+  border: 0;
 }
 
 /*Footer*/
