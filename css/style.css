@@ -106,7 +106,7 @@ nav.stroke ul li a:hover:after {
   line-height: 80px;
 }
 .price-block {
-  width: 400px;
+  max-width: 400px;
   height: 433px;
   position: relative;
   left: calc(50% - 572px);
@@ -135,6 +135,8 @@ nav.stroke ul li a:hover:after {
 }
 .callback {
   margin-top: 38px;
+  display: flex;
+  justify-content: space-between;
 }
 .callback-button {
   text-transform: uppercase;
@@ -142,7 +144,6 @@ nav.stroke ul li a:hover:after {
   border-color: #1a2432 !important;
   font-size: 21px !important;
   padding: 10px 10px !important;
-  margin-left: 24px;
   color: #fff !important;
 }
 /*Стилизация чекбоксов*/
@@ -666,6 +667,7 @@ footer p {
   }
   #kit{
     background: none;
+    padding: 0;
   }
   .kit-grid {
     display: grid;
@@ -677,6 +679,9 @@ footer p {
   .kit-detail{
     position: inherit;
     margin: 0 !important;
+  }
+  .kit-detail img{
+    max-width: 100%;
   }
   .video {
     margin: 20px;
@@ -702,7 +707,7 @@ footer p {
 @media (max-width: 576px){
   .main-image h1{
     margin-top: 40%;
-    font-size: 70px;
+    font-size: 60px;
     -webkit-text-stroke: 1px black;
   }
   .download-wrapper {
@@ -727,5 +732,23 @@ footer p {
   }
   #big-video {
     width: 100%;
+  }
+}
+@media (max-width: 400px){
+  .main-image{
+    background-size: 535px;
+    background-position: top;
+  }
+  .price-block {
+    left: 0;
+    top: -400px;
+  }
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+  }
+  nav li {
+    margin-bottom: 10px;
   }
 }
