@@ -591,6 +591,9 @@ footer p {
   margin-top: 25px;
   margin-bottom: 40px;
 }
+.social-block a:hover {
+  filter: grayscale(100%);
+}
 .footer-social p {
   font-size: 11px;
 }
