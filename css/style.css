@@ -138,7 +138,7 @@ nav.stroke ul li a:hover:after {
   display: flex;
   justify-content: space-between;
   height: 70px;
-  align-items: end;
+  align-items: flex-end;
 }
 .callback-button {
   text-transform: uppercase;
@@ -424,6 +424,24 @@ button:focus {
 }
 .kit-detail p {
   margin-top: 10px;
+}
+/*benefits tab*/
+#benefits .container-fluid > .row {
+  align-items: center;
+  border-bottom: 1px solid gray;
+  padding: 30px 0 !important;
+}
+#benefits .row:last-child{
+  border: 0;
+}
+#benefits .col-xl-3 {
+  text-align: center;
+}
+#benefits p{
+  text-align: justify;
+}
+.galileo p, .wifi p{
+  margin-bottom: 5px;
 }
 
 /*features tab*/
