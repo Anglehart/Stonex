@@ -137,6 +137,8 @@ nav.stroke ul li a:hover:after {
   margin-top: 38px;
   display: flex;
   justify-content: space-between;
+  height: 70px;
+  align-items: end;
 }
 .callback-button {
   text-transform: uppercase;
@@ -145,6 +147,38 @@ nav.stroke ul li a:hover:after {
   font-size: 21px !important;
   padding: 10px 10px !important;
   color: #fff !important;
+  height: max-content;
+}
+.demo-button {
+  background: url("../assets/demo.png") no-repeat center bottom;
+  border: 0;
+  padding: 0;
+  width: 53px;
+  height: 70px;
+}
+.demo-button:hover {
+  background: url("../assets/demo-active.png") no-repeat center bottom;
+}
+[data-tooltip] {
+ position: relative; /* Относительное позиционирование */
+}
+[data-tooltip]::after {
+ content: attr(data-tooltip);
+ position: absolute;
+ width: 140px;
+ left: 0; top: 2em;
+ background: #ffe000;
+ color: #1a2432;
+ padding: 0.5em;
+ pointer-events: none;
+ opacity: 0;
+ transition: 0.5s;
+ border-radius: 7px;
+ font-size: 15px;
+}
+[data-tooltip]:hover::after {
+ opacity: 1;
+ top: 5em;
 }
 /*Стилизация чекбоксов*/
 input[type="checkbox"] {
@@ -529,7 +563,7 @@ button:focus {
 }
 .video-section .row {
   min-height: 875px;
-  background: url('../assets/video-back-product.png') no-repeat bottom right
+  background: url('../assets/video-back-product.png') no-repeat 650px bottom;
 }
 #big-video, #small-video {
   border: 0;
