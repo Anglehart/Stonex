@@ -178,7 +178,16 @@ nav.stroke ul li a:hover:after {
 .hidden-map {
   background-image: none !important;
 }
-#info-map{
+.info-map {
+  opacity: 1;
+  transition: 1s;
+  z-index: 1;
+}
+.hidden-info {
+  opacity: 0;
+  z-index: 0;
+}
+.info-map{
   width: 460px;
   height: 636px;
   background: #fff;
@@ -298,7 +307,7 @@ footer p {
     background-position: left -128px;;
     width: 100%
   }
-  #info-map{
+  .info-map{
     top: 670px;
     left: calc(50% - 230px);
   }
