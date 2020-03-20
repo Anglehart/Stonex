@@ -3,9 +3,92 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/contacts.css">
   <title>Контакты</title>
 </head>
 <body>
-КОНТАКТЫ
+  <header>
+    <div class="container-fluid no-gutters">
+      <div class="row justify-content-end no-gutters">
+        <div class="col-xl-4 col-12 header-contact">
+          <div class="header-email"><a href="mailto:info@gd-geo.ru">info@gd-geo.ru</a></div>
+          <div class="header-phone"><a href="tel:88005063819">8 800 505-38-19</a></div>
+          <div class="header-search"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid no-gutters">
+      <div class="row no-gutters">
+        <div class="col-xl-4 col-lg-4 col-12 header-logo">
+          <a href="/"><img alt="" src="../../assets/logo.png"></a>
+        </div>
+        <div class="col-xl-7 col-lg-8 col-12 offset-xl-1 header-menu">
+          <nav class="stroke">
+            <ul>
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Оплата</a></li>
+              <li><a href="../../contacts">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid no-gutters">
+      <div class="row no-gutters">
+        <div class="col-xl-3 col-lg-3 col-12 breadcrumbs">
+          <ul>
+            <li><a href="/">Главная</a></li>
+            <li class="active-page"><a href="#">КОНТАКТЫ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="contact-map">
+      <div id="msk-map"><h3 onclick="mskclick()">Москва</h3></div>
+      <div id="spb-map" class="hidden-map"><h3 onclick="spbclick()">Санкт-Петербург</h3></div>
+      <div id="klg-map" class="hidden-map"><h3 onclick="klgclick()">Калининград</h3></div>
+      <div id="info-map">
+
+      </div>
+    </div>
+
+
+  </header>
+  <footer>
+    <div class="container-fluid no-gutters">
+      <div class="row no-gutters">
+        <div class="col-xl-3 col-md-6 footer-our-logo">
+          <a href="https://gd-geo.ru" target="_blank"><img src="../../assets/footer-our-logo.png" alt=""></a>
+          <img src="../../assets/footer-stick.png" alt="" class="footer-stick">
+        </div>
+        <div class="col-xl-3 col-md-6 footer-stonex-logo">
+          <a href="https://stonex.su" target="_blank"><img src="../../assets/footer-stonex-logo.png" alt=""></a>
+        </div>
+        <div class="col-xl-3 col-md-6 footer-about">
+          <hr>
+          <h4>О НАС</h4>
+          <p>«Геодевайс Групп» - это команда профессионалов, которые сделают Вам лучшее предложение на рынке и обеспечат всестороннюю техническую поддержку. <span> | <a href="https://gd-geo.ru">www.gd-geo.ru</a></span></p>
+        </div>
+        <div class="col-xl-3 col-md-6 footer-social">
+          <hr>
+          <h4>ПОДПИСЫВАЙТЕСЬ НА НАС</h4>
+          <div class="social-block">
+            <a href="https://vk.com/gdgeo" target="_blank"><img src="../../assets/vk.png" alt="" ></a>
+            <a href="https://www.facebook.com/gdgeoru/" target="_blank"><img src="../../assets/facebook.png" alt=""></a>
+            <a href="https://www.instagram.com/gd_geo/" target="_blank"><img src="../../assets/instagram.png" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCsvkZGAfkqjlc5sXPM8-V8Q" target="_blank"><img src="../../assets/youtube.png" alt=""></a>
+          </div>
+          <p>© ООО «ГЕОДЕВАЙС ГЕОДЕЗИЯ», 2016-2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../scripts/contacts.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/aa2391fb57.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 </body>
 </html>
