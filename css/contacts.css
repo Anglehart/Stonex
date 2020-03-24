@@ -114,10 +114,10 @@ nav.stroke ul li a:hover:after {
 #contact-map{
   width: calc(50% + 570px);
   margin-left: calc(50% - 570px);
-  min-height: 1000px;
+  min-height: 920px;
   background-image: url(../assets/map-back.png);
   background-repeat: no-repeat;
-  background-position: 87px -128px;
+  background-position: 87px -218px;
   position: relative;
 }
 #contact-map h3{
@@ -137,7 +137,7 @@ nav.stroke ul li a:hover:after {
   position: absolute;
   width: 207px;
   height: 228px;
-  top: 428px;
+  top: 338px;
   left: 210px;
   background-image: url(../assets/msk-back.png);
   z-index: 2;
@@ -151,7 +151,7 @@ nav.stroke ul li a:hover:after {
   position: absolute;
   width: 252px;
   height: 231px;
-  top: 273px;
+  top: 183px;
   left: 230px;
   background-image: url(../assets/spb-back.png);
   z-index: 1;
@@ -165,7 +165,7 @@ nav.stroke ul li a:hover:after {
   position: absolute;
   width: 180px;
   height: 130px;
-  top: 286px;
+  top: 196px;
   left: 38px;
   background-image: url(../assets/klg-back.png);
   z-index: 3;
@@ -192,7 +192,7 @@ nav.stroke ul li a:hover:after {
   height: 636px;
   background: #fff;
   position: absolute;
-  top: 264px;
+  top: 174px;
   left: 617px;
   border-radius: 7px;
   padding: 23px;
@@ -244,6 +244,7 @@ nav.stroke ul li a:hover:after {
 }
 .info-map-img {
   margin-top: 25px;
+  width: 100%;
 }
 .disactive{
   display: none;
@@ -356,7 +357,7 @@ footer p {
   }
   #contact-map {
     margin-left: 0;
-    background-position: left -128px;;
+    background-position: left -218px;;
     width: 100%;
     min-height: 1350px;
   }
@@ -404,6 +405,17 @@ footer p {
     margin-top: 20px;
   }
   nav li {
+    margin-bottom: 10px;
+  }
+  .info-map {
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+  .metro-buttons {
+    flex-direction: column;
+  }
+  .metro-button {
     margin-bottom: 10px;
   }
 }
