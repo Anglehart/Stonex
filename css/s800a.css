@@ -833,4 +833,7 @@ footer p {
   nav li {
     margin-bottom: 10px;
   }
+  .header-search {
+    display: none;
+  }
 }

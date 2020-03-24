@@ -249,6 +249,9 @@ nav.stroke ul li a:hover:after {
 .disactive{
   display: none;
 }
+.yandex-map {
+  margin-bottom: -6px;
+}
 
 /*Footer*/
 footer {
@@ -417,5 +420,8 @@ footer p {
   }
   .metro-button {
     margin-bottom: 10px;
+  }
+  .header-search {
+    display: none;
   }
 }
