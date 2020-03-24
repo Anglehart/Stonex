@@ -195,6 +195,58 @@ nav.stroke ul li a:hover:after {
   top: 264px;
   left: 617px;
   border-radius: 7px;
+  padding: 23px;
+}
+.office-p{
+  color: #ea0000;
+  margin-top: 6px;
+  margin-bottom: 16px !important;
+}
+.info-map h2{
+  font-size: 26px;
+  margin-bottom: 47px;
+}
+.info-position, .info-phone{
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+.info-map p img{
+  margin-right: 9px;
+}
+.metro-title{
+  font-size: 16px;
+  color: #767978;
+  margin-top: 32px;
+  margin-bottom: 13px;
+}
+.metro-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.metro-button {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 4px 27px 4px 47px;
+  background-image: url(../assets/metro.png);
+  background-repeat: no-repeat;
+  background-position: 19px center;
+  font-size: 17px;
+  cursor: pointer;
+}
+.metro-button-active {
+  background-image: url(../assets/metro-active.png);
+  background-color: #ea0000;
+  border-color: #ea0000;
+  color: #fff;
+}
+.metro-button span {
+  font-weight: 600;
+}
+.info-map-img {
+  margin-top: 25px;
+}
+.disactive{
+  display: none;
 }
 
 /*Footer*/
@@ -305,7 +357,8 @@ footer p {
   #contact-map {
     margin-left: 0;
     background-position: left -128px;;
-    width: 100%
+    width: 100%;
+    min-height: 1350px;
   }
   .info-map{
     top: 670px;
@@ -319,6 +372,12 @@ footer p {
   }
   #msk-map{
     left: 125px;
+  }
+  .yandex-map iframe{
+    height: 400px;
+  }
+  .breadcrumbs ul {
+    padding: 5px 20px;
   }
 }
 
