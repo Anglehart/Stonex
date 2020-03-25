@@ -4,6 +4,8 @@ body {
 }
 header {
   width: 100%;
+}
+.product-header{
   height: 1455px;
   background-image: url(../assets/header-background.png);
   background-position: center;
