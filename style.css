@@ -1235,21 +1235,21 @@ nav.stroke ul li a {
 
 .number1 {
   background-image: url("assets/delivery-back1.png");
-  height: 753px;
+  min-height: 753px;
   background-repeat: no-repeat;
   background-position: center 150px;
 }
 
 .number2 {
   background-image: url("assets/delivery-back2.png");
-  height: 771px;
+  min-height: 771px;
   background-repeat: no-repeat;
   background-position: center 170px;
 }
 
 .number3 {
   background-image: url("assets/delivery-back3.png");
-  height: 753px;
+  min-height: 753px;
   background-repeat: no-repeat;
   background-position: center 197px;
 }
