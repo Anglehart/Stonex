@@ -6,9 +6,10 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="../style.css">
-  <title>Контакты</title>
+  <link rel="stylesheet" href="../responsive.css">
+  <title>Способы доставки</title>
 </head>
-<body>
+<body class="delivery">
   <header>
     <div class="container-fluid no-gutters">
       <div class="row justify-content-end no-gutters">
@@ -41,52 +42,25 @@
         <div class="col-xl-3 col-lg-3 col-12 breadcrumbs">
           <ul>
             <li><a href="/">Главная</a></li>
-            <li class="active-page"><a href="#">КОНТАКТЫ</a></li>
+            <li class="active-page"><a href="#">СПОСОБЫ ДОСТАВКИ</a></li>
           </ul>
         </div>
       </div>
     </div>
-    <div id="contact-map">
-      <div id="msk-map" class="map-area"><h3 onclick="mskclick()">Москва</h3></div>
-      <div id="spb-map" class="map-area hidden-map"><h3 onclick="spbclick()">Санкт-Петербург</h3></div>
-      <div id="klg-map" class="map-area hidden-map"><h3 onclick="klgclick()">Калининград</h3></div>
-      <div class="info-map" id="msk-info">
-        <p class="office-p">ОФИС</p>
-        <h2>г. Москва</h2>
-        <p class="info-position"><img src="../assets/info-position.png" alt="">ул. Маломосковская, д. 18, стр. 1, офис 102</p>
-        <p class="info-phone"><img src="../assets/info-phone.png" alt="">8 (499) 704 32 56</p>
-        <p class="metro-title">Смотреть маршруты от ближайших станций метро:</p>
-        <div class="metro-buttons">
-          <div class="metro-button metro-button-active" id="alex-button" onclick="alexclick()">ст.м. <span>Алексеевская</span></div>
-          <div class="metro-button" onclick="vdnhclick()" id="vdnh-button">ст.м. <span>ВДНХ</span></div>
-        </div>
-        <img class="info-map-img" src="../images/msk-office.png" alt="">
-      </div>
-      <div class="info-map hidden-info" id="spb-info">
-        <p class="office-p">ОФИС</p>
-        <h2>г. Санкт-Петербург</h2>
-        <p class="info-position"><img src="../assets/info-position.png" alt="">ул. Латышских Стрелков, д. 1, офис 21Н</p>
-        <p class="info-phone"><img src="../assets/info-phone.png" alt="">8 (812) 426 32 56</p>
-        <p class="metro-title">Смотреть маршрут от ближайшей станции метро:</p>
-        <div class="metro-buttons">
-          <div class="metro-button metro-button-active">ст.м. <span>Проспект Большевиков</span></div>
-        </div>
-        <img class="info-map-img" src="../images/spb-office.png" alt="">
-      </div>
-      <div class="info-map hidden-info" id="klg-info">
-        <p class="office-p">ОФИС</p>
-        <h2>г. Калининград</h2>
-        <p class="info-position"><img src="../assets/info-position.png" alt="">ул. Генерал-лейтенанта Озерова, д. 19-19В, 2 этаж, кабинет 219</p>
-        <p class="info-phone"><img src="../assets/info-phone.png" alt="">8 (4012) 20 01 02</p>
-        <img class="info-map-img" style="margin-top: 50px;" src="../images/klg-office.png" alt="">
-      </div>
-    </div>
   </header>
   <section>
-    <div id="alex-yandex-map" class="yandex-map"><iframe src="https://yandex.ru/map-widget/v1/-/CKuEZ-4P" width="100%" height="600" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>
-    <div id="vdnh-yandex-map" class="yandex-map disactive"><iframe src="https://yandex.ru/map-widget/v1/-/CKuEb4NN" width="100%" height="600" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>
-    <div id="spb-yandex-map" class="yandex-map disactive"><iframe src="https://yandex.ru/map-widget/v1/-/CKuEv2~S" width="100%" height="600" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>
-    <div id="klg-yandex-map" class="yandex-map disactive"><iframe src="https://yandex.ru/map-widget/v1/-/CKuEj0mA" width="100%" height="600" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>
+    <div class="container-fluid no-gutters">
+      <div class="row no-gutters">
+        <div class="col-xl-12 col-12">
+          <h1>СПОСОБЫ ДОСТАВКИ</h1>
+          <h2>Стоимость доставки зависит от вашего местоположения:</h2>
+        </div>
+        <div class="col-xl-12 col-12">
+          <h1>СПОСОБЫ ДОСТАВКИ</h1>
+          <h2>Стоимость доставки зависит от вашего местоположения:</h2>
+        </div>
+      </div>
+    </div>
   </section>
   <footer>
     <div class="container-fluid no-gutters">

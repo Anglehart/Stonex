@@ -9,7 +9,7 @@ header {
 
 .product-header{
   height: 1455px;
-  background-image: url(../assets/header-background.png);
+  background-image: url(assets/header-background.png);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -33,14 +33,14 @@ header {
 }
 
 .header-email {
-    background-image: url(../assets/email.png);
+    background-image: url(assets/email.png);
     background-position: 15px 21px;
     border-right: 1px solid #618cbf;
     width: 163px
 }
 
 .header-phone {
-    background-image: url(../assets/phone.png);
+    background-image: url(assets/phone.png);
     background-position: 17px 18px;
     padding-left: 39px;
     width: 170px
@@ -57,7 +57,7 @@ header {
     width: 46px;
     height: 46px;
     vertical-align: top;
-    background-image: url(../assets/search.png);
+    background-image: url(assets/search.png);
     background-repeat: no-repeat;
     background-position: 58% 50%;
     cursor: pointer
@@ -108,7 +108,7 @@ nav.stroke ul li a:hover:after {
 
 .main-image {
     text-align: center;
-    background-image: url(../assets/main-image.png);
+    background-image: url(assets/main-image.png);
     height: 884px;
     background-position: center;
     background-repeat: no-repeat
@@ -173,7 +173,7 @@ nav.stroke ul li a:hover:after {
 }
 
 .demo-button {
-    background: url(../assets/demo.png) no-repeat center bottom;
+    background: url(assets/demo.png) no-repeat center bottom;
     border: 0;
     padding: 0;
     width: 53px;
@@ -181,7 +181,7 @@ nav.stroke ul li a:hover:after {
 }
 
 .demo-button:hover {
-    background: url(../assets/demo-active.png) no-repeat center bottom
+    background: url(assets/demo-active.png) no-repeat center bottom
 }
 
 [data-tooltip] {
@@ -251,7 +251,7 @@ input:disabled+label:before {
 .photogallery {
     width: 100%;
     height: 1035px;
-    background: url(../assets/photoback.png),#1a2632;
+    background: url(assets/photoback.png),#1a2632;
     background-position: top center;
     background-repeat: no-repeat
 }
@@ -638,7 +638,7 @@ button:focus {
     background-color: #007bc0;
     margin: 75% 20px 0;
     transition: .3s;
-    background-image: url(../assets/pdf.png);
+    background-image: url(assets/pdf.png);
     background-repeat: no-repeat;
     background-position: 21px center;
     box-sizing: content-box;
@@ -681,7 +681,7 @@ button:focus {
 
 .video-section {
     width: 100%;
-    background: url(../assets/video-back.png) no-repeat center
+    background: url(assets/video-back.png) no-repeat center
 }
 
 .video {
@@ -697,19 +697,19 @@ button:focus {
 .youtube-button {
     display: block;
     margin-top: 20px;
-    background-image: url(../assets/youtube-button.png);
+    background-image: url(assets/youtube-button.png);
     background-repeat: no-repeat;
     width: 165px;
     height: 26px
 }
 
 .youtube-button:hover {
-    background-image: url(../assets/youtube-button-hover.png)
+    background-image: url(assets/youtube-button-hover.png)
 }
 
 .video-section .row {
     min-height: 875px;
-    background: url(../assets/video-back-product.png) no-repeat 650px bottom
+    background: url(assets/video-back-product.png) no-repeat 650px bottom
 }
 
 #big-video,#small-video {
@@ -925,7 +925,7 @@ footer p {
         height: 100%;
         opacity: .4;
         z-index: -1;
-        background: url(../assets/video-back-product.png) no-repeat bottom right
+        background: url(assets/video-back-product.png) no-repeat bottom right
     }
 
     .download-wrapper {
@@ -1047,14 +1047,14 @@ header {
 }
 
 .header-email {
-    background-image: url(../assets/email.png);
+    background-image: url(assets/email.png);
     background-position: 15px 21px;
     border-right: 1px solid #618cbf;
     width: 163px
 }
 
 .header-phone {
-    background-image: url(../assets/phone.png);
+    background-image: url(assets/phone.png);
     background-position: 17px 18px;
     padding-left: 39px;
     width: 170px
@@ -1066,7 +1066,7 @@ header {
     width: 47px;
     height: 47px;
     vertical-align: top;
-    background-image: url(../assets/search.png);
+    background-image: url(assets/search.png);
     background-repeat: no-repeat;
     background-position: 58% 50%;
     cursor: pointer
@@ -1126,7 +1126,7 @@ nav.stroke ul li a:hover:after {
 }
 
 .breadcrumbs li::before {
-    content: url(../assets/breadcrumb-arrow.png);
+    content: url(assets/breadcrumb-arrow.png);
     float: left;
     width: 1.4em;
     text-align: center
@@ -1149,7 +1149,7 @@ nav.stroke ul li a:hover:after {
     width: calc(50% + 570px);
     margin-left: calc(50% - 570px);
     min-height: 920px;
-    background-image: url(../assets/map-back.png);
+    background-image: url(assets/map-back.png);
     background-repeat: no-repeat;
     background-position: 87px -218px;
     position: relative
@@ -1176,7 +1176,7 @@ nav.stroke ul li a:hover:after {
     height: 200px;
     top: 338px;
     left: 210px;
-    background-image: url(../assets/msk-back.png);
+    background-image: url(assets/msk-back.png);
     z-index: 2
 }
 
@@ -1192,7 +1192,7 @@ nav.stroke ul li a:hover:after {
     height: 183px;
     top: 183px;
     left: 230px;
-    background-image: url(../assets/spb-back.png);
+    background-image: url(assets/spb-back.png);
     z-index: 1
 }
 
@@ -1208,7 +1208,7 @@ nav.stroke ul li a:hover:after {
     height: 117px;
     top: 196px;
     left: 38px;
-    background-image: url(../assets/klg-back.png);
+    background-image: url(assets/klg-back.png);
     z-index: 3
 }
 
@@ -1280,18 +1280,18 @@ nav.stroke ul li a:hover:after {
     border: 1px solid #000;
     border-radius: 20px;
     padding: 4px 27px 4px 47px;
-    background-image: url(../assets/metro.png);
+    background-image: url(assets/metro.png);
     background-repeat: no-repeat;
     background-position: 19px center;
     font-size: 17px;
     cursor: pointer
 }
 #spb-info .metro-button {
-    background-image: url(../assets/metro-spb.png);
+    background-image: url(assets/metro-spb.png);
 }
 
 .metro-button-active {
-    background-image: url(../assets/metro-active.png);
+    background-image: url(assets/metro-active.png);
     background-color: #ea0000;
     border-color: #ea0000;
     color: #fff
@@ -1394,134 +1394,16 @@ footer p {
     margin-left: 23px
 }
 
-@media (max-width:1200px) {
-    .container-fluid {
-        padding: 0!important
-    }
-
-    .header-logo {
-        padding-top: 40px
-    }
-
-    nav ul {
-        margin-top: 146px
-    }
-
-    .footer-stick {
-        display: none
-    }
-
-    .footer-our-logo,.footer-stonex-logo {
-        justify-content: center
-    }
-
-    .footer-about {
-        text-align: justify;
-        padding: 0 50px!important
-    }
-
-    .footer-social {
-        padding: 0 50px!important
-    }
-
-    .footer-about hr,.footer-about p {
-        width: 100%
-    }
-
-    .social-block {
-        justify-content: space-evenly
-    }
+.delivery section {
+    background-color: #1a2432;
 }
-
-@media (max-width:991px) {
-    nav ul {
-        margin-top: 75px;
-        padding: 0 20px
-    }
-
-    .header-logo {
-        text-align: center
-    }
-
-    #contact-map {
-        margin-left: 0;
-        background-position: left -218px;
-        width: 100%;
-        min-height: 1350px
-    }
-
-    .info-map {
-        top: 670px;
-        left: calc(50% - 230px)
-    }
-
-    #klg-map {
-        left: -52px
-    }
-
-    #spb-map {
-        left: 140px
-    }
-
-    #msk-map {
-        left: 125px
-    }
-
-    .yandex-map iframe {
-        height: 400px
-    }
-
-    .breadcrumbs ul {
-        padding: 5px 20px
-    }
+.delivery h1 {
+  color: #fff;
+  font-size: 30px;
+  margin-top: 50px;
 }
-
-@media (max-width:576px) {
-    .footer-about {
-        text-align: justify;
-        padding: 0 20px!important
-    }
-
-    .footer-social {
-        padding: 0 20px!important
-    }
-
-    .footer-stonex-logo {
-        margin: 30px 0
-    }
-}
-
-@media (max-width:400px) {
-    .main-image {
-        background-size: 535px;
-        background-position: top
-    }
-
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-        margin-top: 20px
-    }
-
-    nav li {
-        margin-bottom: 10px
-    }
-
-    .info-map {
-        left: 0;
-        width: 100%;
-        height: auto
-    }
-
-    .metro-buttons {
-        flex-direction: column
-    }
-
-    .metro-button {
-        margin-bottom: 10px
-    }
-
-    .header-search {
-        display: none
-    }
+.delivery h2 {
+  color: #fff;
+  font-size: 18px;
+  margin-top: 80px;
 }

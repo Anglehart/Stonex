@@ -1,0 +1,131 @@
+@media (max-width:1200px) {
+    .container-fluid {
+        padding: 0!important
+    }
+
+    .header-logo {
+        padding-top: 40px
+    }
+
+    nav ul {
+        margin-top: 146px
+    }
+
+    .footer-stick {
+        display: none
+    }
+
+    .footer-our-logo,.footer-stonex-logo {
+        justify-content: center
+    }
+
+    .footer-about {
+        text-align: justify;
+        padding: 0 50px!important
+    }
+
+    .footer-social {
+        padding: 0 50px!important
+    }
+
+    .footer-about hr,.footer-about p {
+        width: 100%
+    }
+
+    .social-block {
+        justify-content: space-evenly
+    }
+}
+
+@media (max-width:991px) {
+    nav ul {
+        margin-top: 75px;
+        padding: 0 20px
+    }
+
+    .header-logo {
+        text-align: center
+    }
+
+    #contact-map {
+        margin-left: 0;
+        background-position: left -218px;
+        width: 100%;
+        min-height: 1350px
+    }
+
+    .info-map {
+        top: 670px;
+        left: calc(50% - 230px)
+    }
+
+    #klg-map {
+        left: -52px
+    }
+
+    #spb-map {
+        left: 140px
+    }
+
+    #msk-map {
+        left: 125px
+    }
+
+    .yandex-map iframe {
+        height: 400px
+    }
+
+    .breadcrumbs ul {
+        padding: 5px 20px
+    }
+}
+
+@media (max-width:576px) {
+    .footer-about {
+        text-align: justify;
+        padding: 0 20px!important
+    }
+
+    .footer-social {
+        padding: 0 20px!important
+    }
+
+    .footer-stonex-logo {
+        margin: 30px 0
+    }
+}
+
+@media (max-width:400px) {
+    .main-image {
+        background-size: 535px;
+        background-position: top
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px
+    }
+
+    nav li {
+        margin-bottom: 10px
+    }
+
+    .info-map {
+        left: 0;
+        width: 100%;
+        height: auto
+    }
+
+    .metro-buttons {
+        flex-direction: column
+    }
+
+    .metro-button {
+        margin-bottom: 10px
+    }
+
+    .header-search {
+        display: none
+    }
+}
