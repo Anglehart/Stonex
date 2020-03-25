@@ -1199,10 +1199,13 @@ nav.stroke ul li a {
     background-color: #1a2432
 }
 
-.delivery h1 {
+.delivery h1, .contacts h1 {
     color: #fff;
     font-size: 30px;
     margin-top: 50px
+}
+.contacts h1 {
+  position: absolute;
 }
 
 .delivery h2 {
