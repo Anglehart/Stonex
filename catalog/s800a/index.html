@@ -57,7 +57,7 @@
       <p><input type="checkbox" id="uhfCheck" onchange="uhfCheck()"><label for="uhfCheck">Активация УКВ модема</label></p>
       <div class="callback">
         <button type="button" class="demo-button" data-toggle="modal" data-target="#demoFormModal" data-tooltip="ЗАКАЗАТЬ ДЕМО">
-        <button type="button" class="callback-button btn" data-toggle="modal" data-target="#feedbackFormModal">
+        <button type="button" id="callback-button" class="btn" data-toggle="modal" data-target="#feedbackFormModal">
       	 Запросить счет
         </button>
       </div>
@@ -465,9 +465,30 @@
       </div>
     </div>
   </footer>
+  <div id="message-wrapper" class="disactive">
+    <div id="message-block">
+      <img class="message-back" src="/assets/message-back.png" alt="">
+      <h4>Заказать счет на оплату</h4>
+      <p>Для этого Вас необходимо заполнить все поля и отправить нам заявку. <br> Наш специались обработает Ваш заказ и пришлет счет на Вашу электронную почту.</p>
+      <form id="order-form" action="upload.php" method="POST" onsubmit="formMessage(); return false">
+        <div class="container-fluid no-gutters">
+          <div class="row no-gutters">
+            <fieldset>
+            <input type="text" name="form-name" id="form-name" placeholder="ФИО / Название организации" required>
+            <input type="email" name="form-email" id="form-email" placeholder="Email" required>
+            <input type="text" name="form-phone" id="form-phone" placeholder="Телефон">
+            <input type="file" id="form-file" multiple>
+            <p id="form-file-message"></p>
+            <button type="submit" name="form-submit" id="form-submit">Upload</button>
+            </fieldset>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script src="https://use.fontawesome.com/aa2391fb57.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="../../scripts/s800a.js"></script>
 </html>

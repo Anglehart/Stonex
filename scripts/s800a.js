@@ -51,20 +51,38 @@ document.getElementById("defaultOpen").click();
 document.getElementById("tab").addEventListener('click', (event) => {
   document.getElementById("tabs-section").style.backgroundImage = "none";
   if (event.target.id == "docs-button"){
-    document.getElementById("tabs-section").style.backgroundImage = "url(assets/docs-back.png)";
+    document.getElementById("tabs-section").style.backgroundImage = "url(/assets/docs-back.png)";
   }
 })
 
 /*Параллакс*/
-  var body = document.getElementById("tabs-section"),
-      startX = -50,
-      startY = -50,
-      w = document.documentElement.offsetWidth,
-      h = document.documentElement.offsetHeight;
+var body = document.getElementById("tabs-section"),
+    startX = -50,
+    startY = -50,
+    w = document.documentElement.offsetWidth,
+    h = document.documentElement.offsetHeight;
 
-	body.addEventListener('mousemove', function(evt){
-    var posX = Math.round(evt.clientX / w * startX)
-    var posY = Math.round(evt.clientY / h * startY)
-    document.getElementById("book1").style.margin = posY + 'px ' + posX + 'px'
-    document.getElementById("book2").style.margin = -posY + 'px ' + posX + 'px'
-  })
+body.addEventListener('mousemove', function(evt){
+  var posX = Math.round(evt.clientX / w * startX)
+  var posY = Math.round(evt.clientY / h * startY)
+  document.getElementById("book1").style.margin = posY + 'px ' + posX + 'px'
+  document.getElementById("book2").style.margin = -posY + 'px ' + posX + 'px'
+})
+
+/*Всплывющее окно*/
+document.getElementById("callback-button").addEventListener('click', (event) => {
+  document.getElementById("message-wrapper").classList.remove('disactive');
+  document.getElementById('order-form').reset();
+  document.getElementById("form-file-message").innerHTML = "Прикрепить реквизиты"
+})
+document.getElementById("message-wrapper").addEventListener('click', (event) => {
+  if (event.target.id == "message-wrapper") document.getElementById("message-wrapper").classList.add('disactive');
+})
+
+const dropZone = document.getElementById("form-file");
+dropZone.addEventListener('drop', () => {
+  setTimeout(() => {
+    let backSlash = dropZone.value.lastIndexOf('\\') + 1;
+    document.getElementById("form-file-message").innerHTML = dropZone.value.slice(backSlash),
+    10})
+})
