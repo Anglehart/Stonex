@@ -477,8 +477,10 @@
             <input type="text" name="form-name" id="form-name" placeholder="ФИО / Название организации" required>
             <input type="email" name="form-email" id="form-email" placeholder="Email" required>
             <input type="text" name="form-phone" id="form-phone" placeholder="Телефон">
-            <input type="file" id="form-file" multiple>
-            <p id="form-file-message"></p>
+            <div id="file-wrapper">
+              <p id="form-file-message"></p>
+              <input type="file" id="form-file" multiple>
+            </div>
             <button type="submit" name="form-submit" id="form-submit">Upload</button>
             </fieldset>
           </div>
