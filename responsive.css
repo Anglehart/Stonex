@@ -208,6 +208,17 @@
     }
 }
 
+@media (max-width:768px) {
+  #message-block{
+    height: 605px;
+    margin-top: 171px;
+    padding: 25px;
+  }
+  .message-back {
+    display: none;
+  }
+}
+
 @media (max-width:576px) {
     .footer-about {
         text-align: justify;
@@ -249,6 +260,26 @@
 
     #features .col-xl-6 {
         padding: 0
+    }
+    #form-email, #form-phone, #form-name {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    #file-wrapper {
+      float: none;
+      margin: auto;
+    }
+    .form-footer {
+      display: none !important;
+    }
+    #form-submit {
+      margin: auto;
+      margin-top: 25px;
+    }
+    #message-block {
+      height: 680px;
+      margin-top: 120px;
+      padding: 20px;
     }
 }
 

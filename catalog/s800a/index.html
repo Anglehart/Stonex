@@ -473,16 +473,40 @@
       <form id="order-form" action="upload.php" method="POST" onsubmit="formMessage(); return false">
         <div class="container-fluid no-gutters">
           <div class="row no-gutters">
-            <fieldset>
-            <input type="text" name="form-name" id="form-name" placeholder="ФИО / Название организации" required>
-            <input type="email" name="form-email" id="form-email" placeholder="Email" required>
-            <input type="text" name="form-phone" id="form-phone" placeholder="Телефон">
-            <div id="file-wrapper">
-              <p id="form-file-message"></p>
-              <input type="file" id="form-file" multiple>
-            </div>
-            <button type="submit" name="form-submit" id="form-submit">Upload</button>
-            </fieldset>
+              <div class="col-12 col-sm-9">
+                <div class="row no-gutters">
+                  <div class="col-12">
+                    <input type="text" name="form-name" id="form-name" placeholder="ФИО / Название организации" required>
+                  </div>
+                </div>
+                <div class="row no-gutters">
+                  <div class="col-12 col-sm-6">
+                    <input type="email" name="form-email" id="form-email" placeholder="Email" required>
+                  </div>
+                  <div class="col-12 col-sm-6" style="text-align: right;">
+                    <input type="tel" name="form-phone" id="form-phone" placeholder="Телефон" required>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-3">
+                <div id="file-wrapper">
+                  <div id="form-file-message"><p></p></div>
+                  <input type="file" id="form-file">
+                </div>
+              </div>
+              <button type="submit" name="form-submit" id="form-submit">Отправить</button>
+              <div class="container-fluid no-gutters">
+                <div class="row no-gutters form-footer">
+                  <div class="col-3">
+                    <p>Возникли вопросы?</p>
+                    <p><img src="../../assets/phone.png" alt=""> 8 800 505-38-19</p>
+                  </div>
+                  <div class="col-8 offset-1">
+                    <p>Наличный взаиморасчет возможен только с физ. лицами</p>
+                    <p><a href="/contacts"><img src="../../assets/location.png" alt=""> Наши офисы</a></p>
+                  </div>
+                </div>
+              </div>
           </div>
         </div>
       </form>

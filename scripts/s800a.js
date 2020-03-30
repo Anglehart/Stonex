@@ -73,7 +73,7 @@ body.addEventListener('mousemove', function(evt){
 document.getElementById("callback-button").addEventListener('click', (event) => {
   document.getElementById("message-wrapper").classList.remove('disactive');
   document.getElementById('order-form').reset();
-  document.getElementById("form-file-message").innerHTML = "Прикрепить реквизиты"
+  document.querySelector("#form-file-message p").innerHTML = "Прикрепить реквизиты"
 })
 document.getElementById("message-wrapper").addEventListener('click', (event) => {
   if (event.target.id == "message-wrapper") document.getElementById("message-wrapper").classList.add('disactive');
@@ -83,6 +83,6 @@ const dropZone = document.getElementById("form-file");
 dropZone.addEventListener('drop', () => {
   setTimeout(() => {
     let backSlash = dropZone.value.lastIndexOf('\\') + 1;
-    document.getElementById("form-file-message").innerHTML = dropZone.value.slice(backSlash),
+    document.querySelector("#form-file-message p").innerHTML = dropZone.value.slice(backSlash),
     10})
 })
