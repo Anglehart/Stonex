@@ -86,3 +86,12 @@ dropZone.addEventListener('drop', () => {
     document.querySelector("#form-file-message p").innerHTML = dropZone.value.slice(backSlash),
     10})
 })
+
+// Всплывающее меню
+document.getElementById('catalog-link').addEventListener('click', () => {
+  if (document.getElementById('catalog-menu').classList.contains('disactive')){
+    document.getElementById('catalog-menu').classList.remove('disactive');
+  } else {
+    document.getElementById('catalog-menu').classList.add('disactive');
+  }
+})

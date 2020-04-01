@@ -1180,3 +1180,50 @@ nav.stroke ul li a {
   margin-top: 60px;
   padding-top: 30px;
 }
+#catalog-menu {
+  width: 714px;
+  background: #ecf1f4;
+  position: absolute;
+  z-index: 2;
+  left: -115px;
+  margin-top: 15px;
+  padding: 15px;
+}
+#catalog-menu > p {
+  padding-left: 13px;
+  margin-top: 10px;
+  display: inline-block;
+  background: #ecf1f4;
+  position: relative;
+}
+#catalog-menu hr {
+  margin-top: -23px;
+  width: 100%;
+  margin-bottom: -10px;
+}
+#catalog-menu:after {
+  content: '';
+  border: 12px solid transparent;
+  position: absolute;
+  left: 26%;
+  top: -24px;
+  width: 0;
+  transition: .3s;
+  border-bottom: 12px solid #ecf1f4;
+}
+#gnss-menu, #collector-menu {
+  display: flex;
+  justify-content: space-around;
+}
+#gnss-menu a, #collector-menu a {
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 21px;
+}
+#gnss-menu a:hover, #collector-menu a:hover {
+  color: #0c72b1;
+}
+#gnss-menu a p, #collector-menu a p {
+  margin-top: 7px;
+}
