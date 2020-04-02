@@ -8,7 +8,6 @@ header {
 
 .main-image,.product-header {
     height: 1455px;
-    background-image: url(assets/header-background.png);
     background-position: center;
     background-repeat: no-repeat
 }
@@ -43,8 +42,6 @@ header,nav.stroke ul li a:hover:after, header,nav.stroke ul li a:focus:after {
 
 .main-image {
     text-align: center;
-    background-image: url(assets/main-image.png);
-    height: 884px
 }
 
 .main-image h1 {
@@ -61,7 +58,6 @@ header,nav.stroke ul li a:hover:after, header,nav.stroke ul li a:focus:after {
     position: relative;
     left: calc(50% - 572px);
     background: #007bc0;
-    top: -207px;
     box-shadow: 6px 6px 15px -1px #4f4e4e87,-6px 6px 15px -1px #4f4e4e87;
     padding: 38px 58px
 }
@@ -186,7 +182,6 @@ input:disabled+label:before {
 
 .photogallery {
     height: 1035px;
-    background: url(assets/photoback.png),#1a2632;
     background-repeat: no-repeat
 }
 
@@ -381,14 +376,6 @@ button:focus {
     outline: 0!important
 }
 
-#kit {
-    text-align: center;
-    margin-top: 100px;
-    min-height: 1118px;
-    padding: 6px 12px;
-    position: relative
-}
-
 #kit::before {
     content: "";
     position: absolute;
@@ -398,49 +385,8 @@ button:focus {
     height: 100%;
     opacity: 1;
     z-index: 0;
-    background: url(images/kit-lines.png) no-repeat center 270px,url(images/kit-back.png) no-repeat center 8px
 }
 
-.kit-detail {
-    display: block;
-    position: absolute;
-    z-index: 1
-}
-
-.kit-detail:nth-child(1) {
-    margin-top: 167px;
-    margin-left: 106px
-}
-
-.kit-detail:nth-child(2) {
-    margin-top: 433px;
-    margin-left: 90px
-}
-
-.kit-detail:nth-child(3) {
-    margin-top: 706px;
-    margin-left: 205px
-}
-
-.kit-detail:nth-child(4) {
-    margin-top: 710px;
-    margin-left: 468px
-}
-
-.kit-detail:nth-child(5) {
-    margin-top: 710px;
-    margin-left: 731px
-}
-
-.kit-detail:nth-child(6) {
-    margin-top: 433px;
-    margin-left: 819px
-}
-
-.kit-detail:nth-child(7) {
-    margin-top: 168px;
-    margin-left: 816px
-}
 
 .kit-detail p {
     margin-top: 10px
@@ -602,7 +548,6 @@ button:focus {
 
 .video-section {
     width: 100%;
-    background: url(assets/video-back.png) no-repeat center
 }
 
 .video {
@@ -627,10 +572,8 @@ button:focus {
 .youtube-button:hover {
     background-image: url(assets/youtube-button-hover.png)
 }
-
 .video-section .row {
     min-height: 875px;
-    background: url(assets/video-back-product.png) no-repeat 650px bottom
 }
 
 #big-video,#small-video {

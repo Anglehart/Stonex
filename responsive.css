@@ -139,14 +139,6 @@
         padding: 0
     }
 
-    .kit-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas: "kit-detail kit-detail" "kit-detail kit-detail" "kit-detail kit-detail" "kit-detail kit-detail";
-        background: 0 0
-    }
-
     .kit-detail {
         position: inherit;
         margin: 0!important
@@ -192,11 +184,6 @@
 
     #book1,#book2 {
         display: none
-    }
-
-    #kit::before {
-        background: url(images/kit-back.png) no-repeat center 100px;
-        opacity: .2
     }
 
     #tab button.active,#tab button:hover {
@@ -296,7 +283,7 @@
     }
     #message-block {
       height: 680px;
-      margin-top: 120px;
+      margin-top: 20px;
       padding: 20px;
     }
 }
