@@ -37,7 +37,7 @@ nav.stroke ul li a:after {
     height: 4px
 }
 
-header,nav.stroke ul li a:hover:after {
+header,nav.stroke ul li a:hover:after, header,nav.stroke ul li a:focus:after {
     width: 100%
 }
 

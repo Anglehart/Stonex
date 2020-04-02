@@ -91,7 +91,12 @@ dropZone.addEventListener('drop', () => {
 document.getElementById('catalog-link').addEventListener('click', () => {
   if (document.getElementById('catalog-menu').classList.contains('disactive')){
     document.getElementById('catalog-menu').classList.remove('disactive');
-  } else {
+  }
+})
+document.body.addEventListener('click', () => {
+  if (event.target.id !== 'catalog-menu' && event.target.id !== 'catalog-link') {
     document.getElementById('catalog-menu').classList.add('disactive');
+  } else if(event.target.id == 'catalog-menu') {
+    document.getElementById('catalog-link').focus();
   }
 })
