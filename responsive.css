@@ -206,6 +206,12 @@
     .header-logo {
         text-align: center
     }
+    #catalog-menu {
+      left: 10px;
+    }
+    #catalog-menu::after {
+      display: none;
+    }
 }
 
 @media (max-width:768px) {
@@ -216,6 +222,18 @@
   }
   .message-back {
     display: none;
+  }
+  #catalog-menu::after {
+    display: none;
+  }
+  #gnss-menu, #collector-menu {
+    flex-wrap: wrap;
+  }
+  #catalog-menu {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+    top: 0;
+    left: 0;
   }
 }
 

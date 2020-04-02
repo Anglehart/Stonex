@@ -1220,6 +1220,7 @@ nav.stroke ul li a {
   text-decoration: none;
   color: #333;
   font-size: 21px;
+  margin: 0 5px;
 }
 #gnss-menu a:hover, #collector-menu a:hover {
   color: #0c72b1;
