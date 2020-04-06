@@ -25,7 +25,7 @@
   position: relative
 }
 #kit::before {
-  background: url(/images/s800a/kit-lines.png) no-repeat center 270px,url(/images/s800a/kit-back.png) no-repeat center 8px
+  background: url(../images/s800a/kit-lines.png) no-repeat center 270px,url(/images/s800a/kit-back.png) no-repeat center 8px
 }
 .kit-detail:nth-child(1) {
     margin-top: 167px;
@@ -68,7 +68,7 @@
 }
 @media (max-width:991px) {
   #kit::before {
-    background: url(/images/s800a/kit-back.png) no-repeat center 100px;
+    background: url(../images/s800a/kit-back.png) no-repeat center 100px;
     opacity: .2
   }
   .kit-grid {

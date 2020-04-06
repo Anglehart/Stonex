@@ -37,7 +37,7 @@
   position: relative
 }
 #kit::before {
-  background: url(/images/s900new/kit-back.png) no-repeat center 150px;
+  background: url(../images/s900new/kit-back.png) no-repeat center 150px;
 }
 .kit-detail:nth-child(1) {
   margin-top: 165px;
@@ -84,7 +84,7 @@
 
 @media (max-width:991px) {
   #kit::before {
-    background: url(/images/s900new/kit-back.png) no-repeat center;
+    background: url(../images/s900new/kit-back.png) no-repeat center;
     opacity: .1
   }
   .kit-grid {

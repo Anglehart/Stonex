@@ -39,7 +39,7 @@
   position: relative
 }
 #kit:before {
-  background: url(/images/s700a/kit-back.png) no-repeat center 8px;
+  background: url(../images/s700a/kit-back.png) no-repeat center 8px;
 }
 .kit-grid {
   display: flex;
@@ -54,7 +54,7 @@
 
 @media (max-width:991px) {
   #kit::before {
-    background: url(/images/s700a/kit-back.png) no-repeat center;
+    background: url(../images/s700a/kit-back.png) no-repeat center;
     opacity: .1
   }
   .kit-grid {
