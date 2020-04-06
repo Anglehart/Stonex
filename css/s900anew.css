@@ -1,0 +1,97 @@
+.main-image, .product-header {
+  background-image: url(../assets/s900anew-header-background.png);
+}
+.main-image {
+  background-image: url(../assets/s900anew-main-image.png);
+  height: 1317px;
+}
+.video-section {
+  background: url(../assets/s900anew-video-back.png) no-repeat center;
+}
+.video-section .row {
+  background: url(../assets/s900anew-video-back-product.png) no-repeat 650px bottom
+}
+.price-block {
+  top: -600px;
+}
+.photogallery {
+  background: url(../assets/s900new-photoback.png),#1a2632;
+  background-position: 30% center;
+  background-repeat: no-repeat;
+}
+.photo-title {
+  color: #fff;
+  margin-top: 130px;
+}
+.section-title {
+  border-top: 1px dotted #fff;
+}
+.main-image h1 {
+  margin-top: calc(50% - 25px);
+}
+#kit {
+  text-align: center;
+  margin-top: 0px;
+  min-height: 1150px;
+  padding: 6px 12px;
+  position: relative
+}
+#kit::before {
+  background: url(/images/s900new/kit-back.png) no-repeat center 150px;
+}
+.kit-detail:nth-child(1) {
+  margin-top: 165px;
+  margin-left: 306px;
+}
+
+.kit-detail:nth-child(2) {
+  margin-top: 165px;
+  margin-left: 595px;
+}
+.kit-detail:nth-child(3) {
+  margin-top: 336px;
+  margin-left: 115px;
+}
+
+.kit-detail:nth-child(4) {
+  margin-top: 336px;
+  margin-left: 818px;
+}
+
+.kit-detail:nth-child(5) {
+  margin-top: 610px;
+  margin-left: 115px;
+}
+
+.kit-detail:nth-child(6) {
+  margin-top: 610px;
+  margin-left: 818px;
+}
+
+.kit-detail:nth-child(7) {
+  margin-top: 785px;
+  margin-left: 306px;
+}
+.kit-detail:nth-child(8) {
+  margin-top: 785px;
+  margin-left: 595px;
+}
+.kit-detail {
+    display: block;
+    position: absolute;
+    z-index: 1
+}
+
+@media (max-width:991px) {
+  #kit::before {
+    background: url(/images/s900new/kit-back.png) no-repeat center;
+    opacity: .1
+  }
+  .kit-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "kit-detail kit-detail" "kit-detail kit-detail" "kit-detail kit-detail" "kit-detail kit-detail";
+    margin: 0px;
+  }
+}

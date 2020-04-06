@@ -38,3 +38,16 @@ function vdnhclick(){
   document.getElementById('alex-button').classList.remove('metro-button-active');
   document.getElementById('vdnh-button').classList.add('metro-button-active');
 }
+// Всплывающее меню
+document.getElementById('catalog-link').addEventListener('click', () => {
+  if (document.getElementById('catalog-menu').classList.contains('disactive')){
+    document.getElementById('catalog-menu').classList.remove('disactive');
+  }
+})
+document.body.addEventListener('click', () => {
+  if (event.target.id !== 'catalog-menu' && event.target.id !== 'catalog-link') {
+    document.getElementById('catalog-menu').classList.add('disactive');
+  } else if(event.target.id == 'catalog-menu') {
+    document.getElementById('catalog-link').focus();
+  }
+})
