@@ -31,23 +31,55 @@
 }
 #kit {
   text-align: center;
-  margin-top: 40px;
-  min-height: 600px;
+  margin-top: 0px;
+  min-height: 1150px;
   padding: 6px 12px;
   position: relative
 }
-#kit:before {
-  background: url(/images/s900new/kit-back.png) no-repeat center 8px;
+#kit::before {
+  background: url(/images/s900new/kit-back.png) no-repeat center 150px;
 }
-.kit-grid {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 440px;
-  margin-bottom: 55px;
-  flex-wrap: wrap;
+.kit-detail:nth-child(1) {
+  margin-top: 165px;
+  margin-left: 306px;
+}
+
+.kit-detail:nth-child(2) {
+  margin-top: 165px;
+  margin-left: 595px;
+}
+.kit-detail:nth-child(3) {
+  margin-top: 336px;
+  margin-left: 115px;
+}
+
+.kit-detail:nth-child(4) {
+  margin-top: 336px;
+  margin-left: 818px;
+}
+
+.kit-detail:nth-child(5) {
+  margin-top: 610px;
+  margin-left: 115px;
+}
+
+.kit-detail:nth-child(6) {
+  margin-top: 610px;
+  margin-left: 818px;
+}
+
+.kit-detail:nth-child(7) {
+  margin-top: 785px;
+  margin-left: 306px;
+}
+.kit-detail:nth-child(8) {
+  margin-top: 785px;
+  margin-left: 595px;
 }
 .kit-detail {
     display: block;
+    position: absolute;
+    z-index: 1
 }
 
 @media (max-width:991px) {
@@ -58,8 +90,8 @@
   .kit-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "kit-detail kit-detail" "kit-detail kit-detail" "kit-detail kit-detail";
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "kit-detail kit-detail" "kit-detail kit-detail" "kit-detail kit-detail" "kit-detail kit-detail";
     margin: 0px;
   }
 }
