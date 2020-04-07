@@ -1,0 +1,359 @@
+body {
+    font-family: 'Open Sans',sans-serif!important
+}
+
+header {
+    background-color: #1a2432
+}
+
+.main-image,.product-header {
+    height: 1455px;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+nav ul li a,nav ul li a:after,nav ul li a:before {
+    transition: all .5s;
+    color: #fff
+}
+
+.download-block a:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+nav.stroke ul li a:after {
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #4272ae;
+    height: 4px
+}
+
+header,nav.stroke ul li a:hover:after, header,nav.stroke ul li a:focus:after {
+    width: 100%
+}
+
+footer {
+    width: 100%;
+    background: #0874b2
+}
+
+footer .row {
+    padding: 45px 0
+}
+
+footer h4,footer p {
+    color: #fff;
+    font-size: 16px
+}
+
+footer p {
+    font-size: 14px;
+    margin-top: 19px;
+    line-height: 22px;
+    width: 95%
+}
+
+
+
+.row {
+    max-width: 1140px;
+    margin: auto!important
+}
+
+.header-contact {
+    background-color: #4273ae;
+    display: flex;
+    justify-content: center
+}
+
+.header-email,.header-phone {
+    color: #fff;
+    padding: 13px 10px 11px 38px;
+    font-size: 15.2px;
+    background-repeat: no-repeat
+}
+
+.header-email a,.header-email a:hover,.header-phone a,.header-phone a:hover,nav ul li a:hover {
+    color: inherit;
+    text-decoration: none
+}
+
+.header-email {
+    background-image: url(../assets/email.png);
+    background-position: 15px 21px;
+    border-right: 1px solid #618cbf;
+    width: 163px
+}
+
+.header-phone {
+    background-image: url(../assets/phone.png);
+    background-position: 17px 18px;
+    padding-left: 39px;
+    width: 170px
+}
+
+.header-search {
+    padding: 10px;
+    background-color: #000;
+    width: 47px;
+    height: 47px;
+    vertical-align: top;
+    background-image: url(../assets/search.png);
+    background-repeat: no-repeat;
+    background-position: 58% 50%;
+    cursor: pointer
+}
+
+.breadcrumbs ul,nav ul {
+    display: flex;
+    list-style: none
+}
+
+nav ul {
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 106px
+}
+
+nav ul li a:hover {
+    color: #fff
+}
+
+nav.stroke ul li a {
+    position: relative
+}
+
+.breadcrumbs ul {
+    padding-left: 0;
+    border-top: 1px dotted #fff;
+    margin-top: 80px;
+    font-size: 14px;
+    padding-top: 5px
+}
+
+.breadcrumbs li::before {
+    content: url(../assets/breadcrumb-arrow.png);
+    float: left;
+    width: 1.4em;
+    text-align: center
+}
+
+.breadcrumbs li:first-child::before {
+    display: none
+}
+
+.breadcrumbs a {
+    color: #505c68;
+    text-decoration: none
+}
+
+.active-page a,.active-page a:hover,.breadcrumbs a:hover {
+    color: #fff
+}
+
+.footer-our-logo,.footer-stonex-logo {
+    align-items: baseline;
+    display: flex
+}
+
+.footer-our-logo img,.footer-stonex-logo img {
+    vertical-align: baseline
+}
+
+.footer-about hr,.footer-social hr {
+    border-top: 1px solid #fff;
+    margin-top: 5px
+}
+
+.footer-about hr {
+    width: 87%;
+    margin-left: 0
+}
+
+.footer-social hr {
+    margin-right: 0
+}
+
+.footer-about a,.footer-about span {
+    color: #182532
+}
+
+.footer-about a:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+.footer-social {
+    padding-left: 38px!important
+}
+
+.social-block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 40px
+}
+
+.social-block a:hover {
+    filter: grayscale(100%)
+}
+
+.footer-social p {
+    font-size: 11px
+}
+
+.footer-stick {
+    margin-left: 23px
+}
+
+.delivery section {
+    background-color: #1a2432
+}
+.delivery h1, .contacts h1 {
+    color: #fff;
+    font-size: 30px;
+    margin-top: 50px
+}
+.contacts h1 {
+  position: absolute;
+}
+.disactive {
+    display: none
+}
+#catalog-menu {
+  width: 714px;
+  background: #ecf1f4;
+  position: absolute;
+  z-index: 2;
+  left: -115px;
+  margin-top: 15px;
+  padding: 15px;
+}
+#catalog-menu > p {
+  padding-left: 13px;
+  margin-top: 10px;
+  display: inline-block;
+  background: #ecf1f4;
+  position: relative;
+}
+#catalog-menu hr {
+  margin-top: -23px;
+  width: 100%;
+  margin-bottom: -10px;
+}
+#catalog-menu:after {
+  content: '';
+  border: 12px solid transparent;
+  position: absolute;
+  left: 26%;
+  top: -24px;
+  width: 0;
+  transition: .3s;
+  border-bottom: 12px solid #ecf1f4;
+}
+#gnss-menu, #collector-menu {
+  display: flex;
+  justify-content: space-around;
+}
+#gnss-menu a, #collector-menu a {
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 21px;
+  margin: 0 5px;
+}
+#gnss-menu a:hover, #collector-menu a:hover {
+  color: #0c72b1;
+}
+#gnss-menu a p, #collector-menu a p {
+  margin-top: 7px;
+}
+.compare-section {
+  background: #e2e9ef;
+}
+.compare-wrapper {
+  max-width: 1140px;
+  margin: auto;
+}
+.compare-wrapper table {
+  border-spacing: 30px 0px;
+  border-collapse: separate;
+  margin: 0px -30px;
+  table-layout: fixed;
+}
+.compare-wrapper table p {
+  margin: 0;
+}
+.compare-wrapper table td {
+  padding: 10px 10px;
+  border-bottom: 1px solid #c8c8c8;
+  font-size: 14px;
+  cursor: pointer;
+}
+.compare-wrapper table tr, .compare-wrapper table tr:first-child td  {
+  text-align: center;
+}
+.compare-wrapper table tr:nth-child(n+3):hover td {
+  background-color: #3767a2 !important;
+  color: #fff;
+  transition: 0.2s;
+}
+.s700a, .s800a, .s850a, .s980, .s990a, .s900a, .s900 {
+  background-color: #457abb;
+  width: 262px;
+  color: #fff;
+}
+.main {
+  background-color: #fff;
+  width: 260px;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.s980, .s990a, .s900a, .s900 {
+  display: none;
+}
+.multiselect {
+  width: 200px;
+}
+.selectBox {
+  position: relative;
+  background-color: #4174b1;
+  width: 265px;
+  padding: 10px;
+  cursor: pointer;
+}
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+#checkboxes {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  width: 265px;
+}
+#checkboxes label {
+  display: block;
+}
+#checkboxes label:hover {
+  background-color: #1e90ff;
+}

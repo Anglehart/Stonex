@@ -1171,3 +1171,48 @@ nav.stroke ul li a {
 #gnss-menu a p, #collector-menu a p {
   margin-top: 7px;
 }
+.compare-section {
+  background: #e2e9ef;
+}
+.compare-wrapper {
+  max-width: 1140px;
+  margin: auto;
+}
+.compare-wrapper table {
+  border-spacing: 30px 0px;
+  border-collapse: separate;
+  margin: 0px -30px;
+  table-layout: fixed;
+}
+.compare-wrapper table p {
+  margin: 0;
+}
+.compare-wrapper table td {
+  padding: 10px 10px;
+  border-bottom: 1px solid #c8c8c8;
+  font-size: 14px;
+  cursor: pointer;
+}
+.compare-wrapper table tr, .compare-wrapper table tr:first-child td  {
+  text-align: center;
+}
+.compare-wrapper table tr:nth-child(n+3):hover td {
+  background-color: #3767a2 !important;
+  color: #fff;
+  transition: 0.2s;
+}
+.s700a, .s800a, .s850a, .s980, .s990a, .s900a, .s900 {
+  background-color: #457abb;
+  width: 262px;
+  color: #fff;
+}
+.main {
+  background-color: #fff;
+  width: 260px;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.s980, .s990a, .s900a, .s900 {
+  display: none;
+}
