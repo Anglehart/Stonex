@@ -57,7 +57,6 @@ var expanded = false;
 const gnssMenu = document.getElementById('gnss-checkboxes');
 
 document.addEventListener('click', (el) => {
-  event.stopPropogation;
   if(el.target.id === 'gnss-box' || el.target.parentNode.parentNode.id  === 'gnss-checkboxes'){
     gnssMenu.style.display = 'block';
     document.getElementById('gnss-box').innerHTML = '+&nbsp;&nbsp;&nbsp;GNSS приемники';
@@ -74,10 +73,11 @@ gnssMenu.querySelectorAll('input').forEach((item) => { item.checked = false; });
 gnssMenu.addEventListener('click', (el) => {
   if (el.target.id && !el.target.disabled && el.target.checked) {
     enableColumn(el.target.id);
+    checboxCounter();
   } else if (el.target.id && !el.target.checked){
     disableColumn(el.target.id);
+    checboxCounter();
   }
-  checboxCounter();
 });
 
 document.getElementById('clearBox').addEventListener('click', () => {
@@ -85,6 +85,7 @@ document.getElementById('clearBox').addEventListener('click', () => {
     item.checked = false;
     item.disabled = false;
     disableColumn(item.id);
+    disableColumn('main-gnss');
   });
 })
 
@@ -103,23 +104,30 @@ function checboxCounter() {
     if(item.checked){ counter += 1; }
   });
   gnssMenu.querySelectorAll('input').forEach((item) => {
-    if(counter >= 3 && !item.checked) { item.disabled = true; } else { item.disabled = false; }
+    if(counter >= 3 && !item.checked) {
+      item.disabled = true;
+      item.parentNode.style.color = "#ccc";
+    } else {
+      item.disabled = false;
+      item.parentNode.style.color = "#000";
+    }
   });
+  if(counter === 0) {
+    disableColumn('main-gnss');
+  } else {
+    enableColumn('main-gnss');
+  }
 }
 
 function enableColumn(id) {
   document.querySelectorAll('.' + id).forEach((item) => {
-    item.style.zIndex = '1';
     item.style.position = 'inherit';
-    item.style.visibility = 'visible';
-    setTimeout(() => {item.style.opacity = '1'}, 50)
+    item.classList.add('show-column');
   });
 }
 function disableColumn(id) {
   document.querySelectorAll('.' + id).forEach((item) => {
-    item.style.opacity = '0';
-    item.style.zIndex = '-1';
-    item.style.visibility = 'hidden';
+    item.classList.remove('show-column');
     setTimeout(() => item.style.position = 'absolute', 300);
   });
 }

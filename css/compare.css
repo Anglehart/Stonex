@@ -315,6 +315,7 @@ nav.stroke ul li a {
   background-color: #0874b2;
   color: #fff;
   transition: 0.3s;
+  transition-delay: 0.1s;
   width: 243px;
   padding: 10px 10px;
   border-left: 30px solid #e2e9ef;
@@ -322,6 +323,24 @@ nav.stroke ul li a {
   display: table-cell;
   position: absolute;
   opacity: 0;
+  z-index: -1;
+}
+.main-gnss {
+  background-color: #fff;
+  width: 260px;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 10px;
+  transition: 0.3s;
+  display: table-cell;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  visibility: hidden;
+}
+.main-gnss img {
+  margin: 50px 50px 50px 44px;
 }
 .frow {
   padding: 0;
@@ -343,18 +362,7 @@ nav.stroke ul li a {
   background-color: #264f82;
   font-size: 35px;
 }
-.main-gnss {
-  background-color: #fff;
-  width: 260px;
-  text-align: left;
-  text-transform: uppercase;
-  font-weight: 600;
-  padding: 10px 10px;
-  transition: 0.3s;
-}
-.main-gnss img {
-  margin: 50px 50px 50px 44px;
-}
+
 .selectBox {
   position: relative;
   background-color: #0874b2;
@@ -405,4 +413,13 @@ nav.stroke ul li a {
 }
 #gnss-checkboxes label:hover {
   background-color: #1e90ff;
+}
+.show-column {
+  z-index: 1;
+  visibility: visible;
+  opacity: 1;
+}
+
+input:disabled+label {
+  color: #ccc;
 }
