@@ -6,7 +6,7 @@ header {
     background-color: #1a2432
 }
 
-.main-image,.product-header {
+.main-gnss-image,.product-header {
     height: 1455px;
     background-position: center;
     background-repeat: no-repeat
@@ -292,16 +292,14 @@ nav.stroke ul li a {
   justify-content: space-around;
 }
 .compare-wrapper table {
-  border-spacing: 30px 0px;
+  border-spacing: 0px 1px;
   border-collapse: separate;
-  margin: 0px -30px;
   table-layout: fixed;
 }
 .compare-wrapper table p {
   margin: 0;
 }
 .compare-wrapper table td {
-  border-bottom: 1px solid #c8c8c8;
   font-size: 14px;
   cursor: pointer;
 }
@@ -317,9 +315,13 @@ nav.stroke ul li a {
   background-color: #0874b2;
   color: #fff;
   transition: 0.3s;
-  display: none;
-  width: 262px;
+  width: 243px;
   padding: 10px 10px;
+  border-left: 30px solid #e2e9ef;
+  box-sizing: content-box;
+  display: table-cell;
+  position: absolute;
+  opacity: 0;
 }
 .frow {
   padding: 0;
@@ -341,7 +343,7 @@ nav.stroke ul li a {
   background-color: #264f82;
   font-size: 35px;
 }
-.main {
+.main-gnss {
   background-color: #fff;
   width: 260px;
   text-align: left;
@@ -350,7 +352,7 @@ nav.stroke ul li a {
   padding: 10px 10px;
   transition: 0.3s;
 }
-.main img {
+.main-gnss img {
   margin: 50px 50px 50px 44px;
 }
 .selectBox {
@@ -389,6 +391,7 @@ nav.stroke ul li a {
   position: absolute;
   background-color: #fff;
   width: 250px;
+  z-index: 10;
 }
 #gnss-checkboxes label {
   display: block;

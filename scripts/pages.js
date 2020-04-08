@@ -109,11 +109,17 @@ function checboxCounter() {
 
 function enableColumn(id) {
   document.querySelectorAll('.' + id).forEach((item) => {
-    item.style.display = 'table-cell';
+    item.style.zIndex = '1';
+    item.style.position = 'inherit';
+    item.style.visibility = 'visible';
+    setTimeout(() => {item.style.opacity = '1'}, 50)
   });
 }
 function disableColumn(id) {
   document.querySelectorAll('.' + id).forEach((item) => {
-    item.style.display = 'none';
+    item.style.opacity = '0';
+    item.style.zIndex = '-1';
+    item.style.visibility = 'hidden';
+    setTimeout(() => item.style.position = 'absolute', 300);
   });
 }
