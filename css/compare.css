@@ -289,7 +289,7 @@ nav.stroke ul li a {
 .compare-controls {
   padding: 40px 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 .compare-wrapper table {
   border-spacing: 30px 0px;
@@ -356,10 +356,19 @@ nav.stroke ul li a {
 .selectBox {
   position: relative;
   background-color: #0874b2;
-  width: 265px;
+  width: 250px;
   padding: 10px;
   cursor: pointer;
   color: #fff;
+}
+#clearBox {
+  position: relative;
+  background-color: #0874b2;
+  width: 200px;
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
 }
 .selectBox:focus span {
   display: none;
@@ -379,7 +388,7 @@ nav.stroke ul li a {
   display: none;
   position: absolute;
   background-color: #fff;
-  width: 265px;
+  width: 250px;
 }
 #gnss-checkboxes label {
   display: block;

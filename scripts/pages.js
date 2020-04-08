@@ -80,6 +80,14 @@ gnssMenu.addEventListener('click', (el) => {
   checboxCounter();
 });
 
+document.getElementById('clearBox').addEventListener('click', () => {
+  gnssMenu.querySelectorAll('input').forEach((item) => {
+    item.checked = false;
+    item.disabled = false;
+    disableColumn(item.id);
+  });
+})
+
 document.querySelectorAll('.minus-button').forEach((item) => {
   item.addEventListener('click', (el) => {
     const id = el.target.id.slice(0, -1);
