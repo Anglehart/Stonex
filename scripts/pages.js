@@ -54,14 +54,43 @@ document.body.addEventListener('click', () => {
 
 // Выпадающий список чекбоксов
 var expanded = false;
+const gnssMenu = document.getElementById('gnss-checkboxes');
 
 function showCheckboxes() {
-  var checkboxes = document.getElementById("checkboxes");
   if (!expanded) {
-    checkboxes.style.display = "block";
+    gnssMenu.style.display = 'block';
     expanded = true;
   } else {
-    checkboxes.style.display = "none";
+    gnssMenu.style.display = 'none';
     expanded = false;
   }
+}
+
+
+gnssMenu.querySelectorAll('input').forEach((item) => { item.checked = false; });
+
+gnssMenu.addEventListener('click', (el) => {
+  if (el.target.id && !el.target.disabled && el.target.checked) {
+    enableColumn(el.target.id);
+  } else if (el.target.id && !el.target.checked){
+    disableColumn(el.target.id);
+  }
+  let counter = 0;
+  gnssMenu.querySelectorAll('input').forEach((item) => {
+    if(item.checked){ counter += 1; }
+  });
+  gnssMenu.querySelectorAll('input').forEach((item) => {
+    if(counter >= 3 && !item.checked) { item.disabled = true; } else { item.disabled = false; }
+  });
+});
+
+function enableColumn(id) {
+  document.querySelectorAll('.' + id).forEach((item) => {
+    item.style.display = 'table-cell';
+  });
+}
+function disableColumn(id) {
+  document.querySelectorAll('.' + id).forEach((item) => {
+    item.style.display = 'none';
+  });
 }

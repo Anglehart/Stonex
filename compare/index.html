@@ -71,27 +71,22 @@
   </header>
   <section class="compare-section">
     <div class="compare-wrapper">
-      <form>
-        <div class="multiselect">
-          <div class="selectBox" onclick="showCheckboxes()">GNSS приемники</div>
-          <div id="checkboxes">
-            <label for="one">
-            <input type="checkbox" id="one" />S700A</label>
-            <label for="two">
-            <input type="checkbox" id="two" />S800A</label>
-            <label for="three">
-            <input type="checkbox" id="three" />S850A</label>
-            <label for="four">
-            <input type="checkbox" id="four" />S900</label>
-            <label for="five">
-            <input type="checkbox" id="five" />S980</label>
-            <label for="six">
-            <input type="checkbox" id="six" />S900A</label>
-            <label for="seven">
-            <input type="checkbox" id="seven" />S990A</label>
+      <div class="compare-controls"> 
+        <form>
+          <div class="multiselect">
+            <div class="selectBox" onclick="showCheckboxes()">GNSS приемники</div>
+            <div id="gnss-checkboxes">
+              <label for="s700a"><input type="checkbox" id="s700a" />S700A</label>
+              <label for="s800a"><input type="checkbox" id="s800a" />S800A</label>
+              <label for="s850a"><input type="checkbox" id="s850a" />S850A</label>
+              <label for="s900"><input type="checkbox" id="s900" />S900</label>
+              <label for="s980"><input type="checkbox" id="s980" />S980</label>
+              <label for="s900a"><input type="checkbox" id="s900a" />S900A</label>
+              <label for="s990a"><input type="checkbox" id="s990a" />S990A</label>
+            </div>
           </div>
-        </div>
-      </form>
+        </form>
+      </div>
       <table>
         <tr>
           <td class="main" rowspan="2"><img src="../../assets/compare-icon.png" alt=""></td>
@@ -255,8 +250,8 @@
     </div>
   </footer>
   <script src="../scripts/pages.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script src="https://use.fontawesome.com/aa2391fb57.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 </body>
 </html>

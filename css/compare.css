@@ -286,6 +286,11 @@ nav.stroke ul li a {
   max-width: 1140px;
   margin: auto;
 }
+.compare-controls {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
 .compare-wrapper table {
   border-spacing: 30px 0px;
   border-collapse: separate;
@@ -296,7 +301,6 @@ nav.stroke ul li a {
   margin: 0;
 }
 .compare-wrapper table td {
-  padding: 10px 10px;
   border-bottom: 1px solid #c8c8c8;
   font-size: 14px;
   cursor: pointer;
@@ -311,8 +315,11 @@ nav.stroke ul li a {
 }
 .s700a, .s800a, .s850a, .s980, .s990a, .s900a, .s900 {
   background-color: #457abb;
-  width: 262px;
   color: #fff;
+  transition: 0.5s;
+  display: none;
+  width: 262px;
+  padding: 10px 10px;
 }
 .main {
   background-color: #fff;
@@ -320,9 +327,7 @@ nav.stroke ul li a {
   text-align: left;
   text-transform: uppercase;
   font-weight: 600;
-}
-.s980, .s990a, .s900a, .s900 {
-  display: none;
+  padding: 10px 10px;
 }
 .multiselect {
   width: 200px;
@@ -345,15 +350,18 @@ nav.stroke ul li a {
   top: 0;
   bottom: 0;
 }
-#checkboxes {
+#gnss-checkboxes {
   display: none;
   position: absolute;
   background-color: #fff;
   width: 265px;
 }
-#checkboxes label {
+#gnss-checkboxes label {
   display: block;
+  margin: 0;
+  padding: 10px;
+  cursor: pointer;
 }
-#checkboxes label:hover {
+#gnss-checkboxes label:hover {
   background-color: #1e90ff;
 }
