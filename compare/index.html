@@ -74,7 +74,7 @@
       <div class="compare-controls">
         <form>
           <div class="multiselect">
-            <div class="selectBox" onclick="showCheckboxes()">-&nbsp;&nbsp;&nbsp;GNSS приемники</div>
+            <div class="selectBox" id="gnss-box">&minus;&nbsp;&nbsp;&nbsp;GNSS приемники</div>
             <div id="gnss-checkboxes">
               <label for="s700a"><input type="checkbox" id="s700a" />S700A</label>
               <label for="s800a"><input type="checkbox" id="s800a" />S800A</label>
@@ -90,13 +90,27 @@
       <table>
         <tr>
           <td class="main" rowspan="2"><img src="../assets/compare-icon.png" alt=""></td>
-          <td class="s700a"><h2>S700A</h2></td>
-          <td class="s800a"><h2>S800A</h2></td>
-          <td class="s850a"><h2>S850A</h2></td>
-          <td class="s900"><h2>S900</h2></td>
-          <td class="s900a"><h2>S900A</h2></td>
-          <td class="s980"><h2>S980</h2></td>
-          <td class="s990a"><h2>S990A</h2></td>
+          <td class="s700a frow">
+            <div><h2>S700A</h2><div class="minus-button" id="s700am">&minus;</div></div>
+          </td>
+          <td class="s800a frow">
+            <div><h2>S800A</h2><div class="minus-button" id="s800am">&minus;</div></div>
+          </td>
+          <td class="s850a frow">
+            <div><h2>S850A</h2><div class="minus-button" id="s850am">&minus;</div></div>
+          </td>
+          <td class="s900 frow">
+            <div><h2>S900</h2><div class="minus-button" id="s900m">&minus;</div></div>
+          </td>
+          <td class="s900a frow">
+            <div><h2>S900A</h2><div class="minus-button" id="s900am">&minus;</div></div>
+          </td>
+          <td class="s980 frow">
+            <div><h2>S980</h2><div class="minus-button" id="s980m">&minus;</div></div>
+          </td>
+          <td class="s990a frow">
+            <div><h2>S990A</h2><div class="minus-button" id="s990am">&minus;</div></div>
+          </td>
         </tr>
         <tr>
           <td class="s700a"><img src="../images/compare/s700s850.png" alt="S700A"></td>

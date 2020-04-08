@@ -56,19 +56,18 @@ document.body.addEventListener('click', () => {
 var expanded = false;
 const gnssMenu = document.getElementById('gnss-checkboxes');
 
-function showCheckboxes() {
-  event.target
-  if (!expanded) {
+document.addEventListener('click', (el) => {
+  event.stopPropogation;
+  if(el.target.id === 'gnss-box' || el.target.parentNode.parentNode.id  === 'gnss-checkboxes'){
     gnssMenu.style.display = 'block';
-    event.target.innerHTML = '+&nbsp;&nbsp;&nbsp;GNSS приемники';
+    document.getElementById('gnss-box').innerHTML = '+&nbsp;&nbsp;&nbsp;GNSS приемники';
     expanded = true;
   } else {
     gnssMenu.style.display = 'none';
-    event.target.innerHTML = '-&nbsp;&nbsp;&nbsp;GNSS приемники';
+    document.getElementById('gnss-box').innerHTML = '&minus;&nbsp;&nbsp;&nbsp;GNSS приемники';
     expanded = false;
   }
-}
-
+})
 
 gnssMenu.querySelectorAll('input').forEach((item) => { item.checked = false; });
 
@@ -78,6 +77,19 @@ gnssMenu.addEventListener('click', (el) => {
   } else if (el.target.id && !el.target.checked){
     disableColumn(el.target.id);
   }
+  checboxCounter();
+});
+
+document.querySelectorAll('.minus-button').forEach((item) => {
+  item.addEventListener('click', (el) => {
+    const id = el.target.id.slice(0, -1);
+    disableColumn(id);
+    document.getElementById(id).checked = false;
+    checboxCounter();
+  })
+})
+
+function checboxCounter() {
   let counter = 0;
   gnssMenu.querySelectorAll('input').forEach((item) => {
     if(item.checked){ counter += 1; }
@@ -85,7 +97,7 @@ gnssMenu.addEventListener('click', (el) => {
   gnssMenu.querySelectorAll('input').forEach((item) => {
     if(counter >= 3 && !item.checked) { item.disabled = true; } else { item.disabled = false; }
   });
-});
+}
 
 function enableColumn(id) {
   document.querySelectorAll('.' + id).forEach((item) => {

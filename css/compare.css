@@ -309,20 +309,37 @@ nav.stroke ul li a {
   text-align: center;
 }
 .compare-wrapper table tr:nth-child(n+3):hover td {
-  background-color: #3767a2 !important;
+  background-color: #096aa2 !important;
   color: #fff;
   transition: 0.2s;
 }
 .s700a, .s800a, .s850a, .s980, .s990a, .s900a, .s900 {
-  background-color: #457abb;
+  background-color: #0874b2;
   color: #fff;
-  transition: 0.5s;
+  transition: 0.3s;
   display: none;
   width: 262px;
   padding: 10px 10px;
 }
-.s700a {
-
+.frow {
+  padding: 0;
+  background-color: #096aa2
+}
+.frow h2 {
+  margin: 0 20px;
+}
+.frow > div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.minus-button {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  margin: -2px 0;
+  background-color: #264f82;
+  font-size: 35px;
 }
 .main {
   background-color: #fff;
@@ -331,16 +348,14 @@ nav.stroke ul li a {
   text-transform: uppercase;
   font-weight: 600;
   padding: 10px 10px;
+  transition: 0.3s;
 }
 .main img {
   margin: 50px 50px 50px 44px;
 }
-.multiselect {
-  width: 200px;
-}
 .selectBox {
   position: relative;
-  background-color: #4174b1;
+  background-color: #0874b2;
   width: 265px;
   padding: 10px;
   cursor: pointer;
