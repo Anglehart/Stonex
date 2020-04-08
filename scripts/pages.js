@@ -57,11 +57,14 @@ var expanded = false;
 const gnssMenu = document.getElementById('gnss-checkboxes');
 
 function showCheckboxes() {
+  event.target
   if (!expanded) {
     gnssMenu.style.display = 'block';
+    event.target.innerHTML = '+&nbsp;&nbsp;&nbsp;GNSS приемники';
     expanded = true;
   } else {
     gnssMenu.style.display = 'none';
+    event.target.innerHTML = '-&nbsp;&nbsp;&nbsp;GNSS приемники';
     expanded = false;
   }
 }

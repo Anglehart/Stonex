@@ -321,6 +321,9 @@ nav.stroke ul li a {
   width: 262px;
   padding: 10px 10px;
 }
+.s700a {
+
+}
 .main {
   background-color: #fff;
   width: 260px;
@@ -328,6 +331,9 @@ nav.stroke ul li a {
   text-transform: uppercase;
   font-weight: 600;
   padding: 10px 10px;
+}
+.main img {
+  margin: 50px 50px 50px 44px;
 }
 .multiselect {
   width: 200px;
@@ -338,6 +344,10 @@ nav.stroke ul li a {
   width: 265px;
   padding: 10px;
   cursor: pointer;
+  color: #fff;
+}
+.selectBox:focus span {
+  display: none;
 }
 .selectBox select {
   width: 100%;
@@ -361,6 +371,10 @@ nav.stroke ul li a {
   margin: 0;
   padding: 10px;
   cursor: pointer;
+  border-bottom: 1px solid #c8c8c8;
+}
+#gnss-checkboxes input {
+  margin-right: 10px;
 }
 #gnss-checkboxes label:hover {
   background-color: #1e90ff;
