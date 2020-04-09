@@ -285,6 +285,7 @@ nav.stroke ul li a {
 .compare-wrapper {
   max-width: 1140px;
   margin: auto;
+  padding-bottom: 70px;
 }
 .compare-controls {
   padding: 40px 0;
@@ -292,7 +293,7 @@ nav.stroke ul li a {
   justify-content: space-around;
 }
 .compare-wrapper table {
-  border-spacing: 0px 1px;
+  border-spacing: 0px;
   border-collapse: separate;
   table-layout: fixed;
 }
@@ -302,6 +303,7 @@ nav.stroke ul li a {
 .compare-wrapper table td {
   font-size: 14px;
   cursor: pointer;
+  border-top: 1px solid #e2e9ef;
 }
 .compare-wrapper table tr, .compare-wrapper table tr:first-child td  {
   text-align: center;
@@ -314,8 +316,6 @@ nav.stroke ul li a {
 .s700a, .s800a, .s850a, .s980, .s990a, .s900a, .s900 {
   background-color: #0874b2;
   color: #fff;
-  transition: 0.3s;
-  transition-delay: 0.1s;
   width: 243px;
   padding: 10px 10px;
   border-left: 30px solid #e2e9ef;
@@ -332,12 +332,19 @@ nav.stroke ul li a {
   text-transform: uppercase;
   font-weight: 600;
   padding: 10px 10px;
-  transition: 0.3s;
   display: table-cell;
   position: absolute;
   opacity: 0;
   z-index: -1;
   visibility: hidden;
+  transition: 0s !important;
+}
+.show-column {
+  z-index: 1;
+  visibility: visible;
+  opacity: 1;
+  position: inherit;
+  transition: 0.3s;
 }
 .main-gnss img {
   margin: 50px 50px 50px 44px;
@@ -371,7 +378,7 @@ nav.stroke ul li a {
   cursor: pointer;
   color: #fff;
 }
-#clearBox {
+#clearBox, #diffBox {
   position: relative;
   background-color: #0874b2;
   width: 200px;
@@ -379,6 +386,17 @@ nav.stroke ul li a {
   cursor: pointer;
   color: #fff;
   text-align: center;
+  transition: 0.3s;
+  border-radius: 5px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.inactive-button {
+  background-color: #748793 !important;
+  transition: 0.3s;
+  pointer-events: none;
+}
+.active-button {
+  box-shadow: 0 0 1px rgba(0,0,0,.5) inset, 0 2px 3px rgba(0,0,0,.5) inset, 0 1px 1px rgba(255,255,255,.1) !important;
 }
 .selectBox:focus span {
   display: none;
@@ -413,11 +431,6 @@ nav.stroke ul li a {
 }
 #gnss-checkboxes label:hover {
   background-color: #1e90ff;
-}
-.show-column {
-  z-index: 1;
-  visibility: visible;
-  opacity: 1;
 }
 
 input:disabled+label {

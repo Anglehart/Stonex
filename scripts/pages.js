@@ -55,7 +55,7 @@ document.body.addEventListener('click', () => {
 // Выпадающий список чекбоксов
 var expanded = false;
 const gnssMenu = document.getElementById('gnss-checkboxes');
-
+const diffButton = document.getElementById('diffBox');
 document.addEventListener('click', (el) => {
   if(el.target.id === 'gnss-box' || el.target.parentNode.parentNode.id  === 'gnss-checkboxes'){
     gnssMenu.style.display = 'block';
@@ -70,13 +70,18 @@ document.addEventListener('click', (el) => {
 
 gnssMenu.querySelectorAll('input').forEach((item) => { item.checked = false; });
 
-gnssMenu.addEventListener('click', (el) => {
-  if (el.target.id && !el.target.disabled && el.target.checked) {
-    enableColumn(el.target.id);
-    checboxCounter();
-  } else if (el.target.id && !el.target.checked){
-    disableColumn(el.target.id);
-    checboxCounter();
+gnssMenu.addEventListener('click', (event) => {
+  if (!event.target.disabled && event.target.id){
+    gnssMenu.querySelectorAll('input').forEach((el) => {
+      if (el.checked) {
+        enableColumn('main-gnss');
+        enableColumn(el.id);
+        checboxCounter();
+      } else if (!el.checked){
+        disableColumn(el.id);
+        checboxCounter();
+      }
+    });
   }
 });
 
@@ -84,10 +89,34 @@ document.getElementById('clearBox').addEventListener('click', () => {
   gnssMenu.querySelectorAll('input').forEach((item) => {
     item.checked = false;
     item.disabled = false;
+    item.parentNode.style.color = "#000";
+    diffButton.classList.remove('active-button');
+    diffButton.classList.add('inactive-button');
     disableColumn(item.id);
     disableColumn('main-gnss');
   });
 })
+
+const visibleCols = document.querySelectorAll('.show-column');
+
+function showDiff(){
+  diffButton.classList.add('active-button');
+  document.querySelectorAll('tr').forEach((item, i) => {
+    if (i > 1) {
+      let temp = [];
+      item.querySelectorAll('td').forEach((elem) => {
+        if (!elem.classList.contains('main-gnss') && elem.classList.contains('show-column')){
+          temp.push(elem.innerText);
+        }
+      });
+      if (temp[0] === temp[1] && temp[0] === temp[temp.length - 1]) {
+        item.querySelectorAll('td').forEach((elem) => {
+          elem.classList.remove('show-column');
+        });
+      }
+    }
+  });
+}
 
 document.querySelectorAll('.minus-button').forEach((item) => {
   item.addEventListener('click', (el) => {
@@ -112,22 +141,25 @@ function checboxCounter() {
       item.parentNode.style.color = "#000";
     }
   });
-  if(counter === 0) {
-    disableColumn('main-gnss');
+  if(counter > 1) {
+    diffButton.classList.remove('inactive-button');
   } else {
-    enableColumn('main-gnss');
+    diffButton.classList.add('inactive-button');
+    diffButton.classList.remove('active-button');
+  }
+  if(counter === 0) {
+    disableColumn('main-gnss')
   }
 }
 
 function enableColumn(id) {
+  diffButton.classList.remove('active-button');
   document.querySelectorAll('.' + id).forEach((item) => {
-    item.style.position = 'inherit';
     item.classList.add('show-column');
   });
 }
 function disableColumn(id) {
   document.querySelectorAll('.' + id).forEach((item) => {
     item.classList.remove('show-column');
-    setTimeout(() => item.style.position = 'absolute', 300);
   });
 }

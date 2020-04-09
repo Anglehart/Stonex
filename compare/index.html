@@ -87,6 +87,7 @@
           </div>
         </form>
         <div id="clearBox">Очистить сравнение</div>
+        <div id="diffBox" class="inactive-button" onclick="showDiff()">Показать отличия</div>
       </div>
       <table>
         <tr>
@@ -122,6 +123,7 @@
           <td class="s980"><img src="" alt=""></td>
           <td class="s990a"><img src="" alt=""></td>
         </tr>
+        <!--Основные характеристики-->
         <tr>
           <td class="main-gnss"><p>Спутниковые сигналы</p></td>
           <td class="s700a"><p>GPS: L1 C/A, L1C, L1P, L2C, L2P, L5<br>ГЛОНАСС: G1, G2, G3<br>BeiDou: B1, B2, B3, ACEBOC<br>GALILEO: E1, E5A, E5B, ALTBOC, E6<br>QZSS: L1 C/A, L1C, L2C, L5, L6<br>IRNSS: L5 </p></td>
@@ -227,8 +229,284 @@
           <td class="s700a"><p>Встроенный датчик наклона<br>E-Bubble</p></td>
           <td class="s800a"><p>-</p></td>
           <td class="s850a"><p>Встроенный датчик наклона<br>E-Bubble</p></td>
-          <td class="s900"><p></p>Встроенный датчик наклона<br>E-Bubble</td>
+          <td class="s900"><p>Встроенный датчик наклона<br>E-Bubble</p></td>
           <td class="s900a"><p>Встроенный датчик наклона<br>E-Bubble<br>IMU (опционально)</p></td>
+          <td class="s980"><p></p></td>
+          <td class="s990a"><p></p></td>
+        </tr>
+        <!--Точность-->
+        <tr>
+          <td class="main-gnss"><p>Высокая точность статической съемки</p></td>
+          <td class="s700a"><p>В плане: 2.5 мм + 1 ppm (RMS)<br>По высоте: 5.0 мм + 1 ppm (RMS)</p></td>
+          <td class="s800a"><p>В плане: 2.5 мм + 1 ppm (RMS)<br>По высоте: 5.0 мм + 1 ppm (RMS)</p></td>
+          <td class="s850a"><p>В плане: 2.5 мм + 1 ppm (RMS)<br>По высоте: 5.0 мм + 1 ppm (RMS)</p></td>
+          <td class="s900"><p>В плане: 3.0 мм + 0.1 ppm (RMS)<br>По высоте: 3.5 мм + 0.4 ppm (RMS)</p></td>
+          <td class="s900a"><p>В плане: 2.5 мм + 0.1 ppm (RMS)<br>По высоте: 3.5 мм + 0.4 ppm (RMS)</p></td>
+          <td class="s980"><p></p></td>
+          <td class="s990a"><p></p></td>
+        </tr>
+        <tr>
+          <td class="main-gnss"><p>Кодовая дифференциальная съемка</p></td>
+          <td class="s700a"><p>В плане: &lt; 0.5 м RMS<br>По высоте: &lt; 1.0 м RMS</p></td>
+          <td class="s800a"><p>В плане: &lt; 0.5 м RMS<br>По высоте: &lt; 1.0 м RMS</p></td>
+          <td class="s850a"><p>В плане: &lt; 0.5 м RMS<br>По высоте: &lt; 1.0 м RMS</p></td>
+          <td class="s900"><p>В плане: 0.25 м RMS<br>По высоте: 0.45 м RMS</p></td>
+          <td class="s900a"><p>В плане: 0.25 м RMS<br>По высоте: 0.45 м RMS</p></td>
+          <td class="s980"><p></p></td>
+          <td class="s990a"><p></p></td>
+        </tr>
+        <tr>
+          <td class="main-gnss"><p>SBAS позиционирование (обычно)</p></td>
+          <td class="s700a"><p>В плане: &lt; 0.6 м RMS <br>По высоте: &lt; 1.2 м RMS</p></td>
+          <td class="s800a"><p>В плане: &lt; 0.6 м RMS <br>По высоте: &lt; 1.2 м RMS</p></td>
+          <td class="s850a"><p>В плане: &lt; 0.6 м RMS <br>По высоте: &lt; 1.2 м RMS</p></td>
+          <td class="s900"><p>В плане: 0.3 м RMS <br>По высоте: 0.6 м RMS</p></td>
+          <td class="s900a"><p>В плане: 0.3 м RMS <br>По высоте: 0.6 м RMS</p></td>
+          <td class="s980"><p></p></td>
+          <td class="s990a"><p></p></td>
+        </tr>
+        <tr>
+          <td class="main-gnss"><p>RTK съемка</p></td>
+          <td class="s700a"><p>В плане: 8 мм + 1 ppm (RMS) <br>По высоте: 15 мм + 1 ppm (RMS)</p></td>
+          <td class="s800a"><p>В плане: 8 мм + 1 ppm (RMS) <br>По высоте: 15 мм + 1 ppm (RMS)</p></td>
+          <td class="s850a"><p>В плане: 8 мм + 1 ppm (RMS) <br>По высоте: 15 мм + 1 ppm (RMS)</p></td>
+          <td class="s900"><p>В плане: 8 мм + 1 ppm (RMS) <br>По высоте: 15 мм + 1 ppm (RMS)</p></td>
+          <td class="s900a"><p>В плане: 8 мм + 1 ppm (RMS) <br>По высоте: 15 мм + 1 ppm (RMS)</p></td>
+          <td class="s980"><p></p></td>
+          <td class="s990a"><p></p></td>
+        </tr>
+        <!--Встроенный радиомодем-->
+        <tr>
+          <td class="main-gnss"><p>Тип встроенного радиомодема</p></td>
+          <td class="s700a"><p>-</p></td>
+          <td class="s800a"><p>Tx-Rx</p></td>
+          <td class="s850a"><p>Tx-Rx</p></td>
+          <td class="s900"><p>Tx-Rx</p></td>
+          <td class="s900a"><p>Tx-Rx</p></td>
+          <td class="s980"><p></p></td>
+          <td class="s990a"><p></p></td>
+        </tr>
+        <tr>
+          <td class="main-gnss"><p>Диапазон частот</p></td>
+          <td class="s700a"><p>-</p></td>
+          <td class="s800a"><p>410 - 470 Мгц</p></td>
+          <td class="s850a"><p>410 - 470 Мгц<br>902.4 - 928 МГц</p></td>
+          <td class="s900"><p>410 - 470 Мгц<br>902.4 - 928 МГц</p></td>
+          <td class="s900a"><p>410 - 470 Мгц<br>902.4 - 928 МГц</p></td>
+          <td class="s980"><p></p></td>
+          <td class="s990a"><p></p></td>
+        </tr>
+        <tr>
+          <td class="main-gnss"><p>Разделение каналов</p></td>
+          <td class="s700a"><p>-</p></td>
+          <td class="s800a"><p>12,5/25 КГц</p></td>
+          <td class="s850a"><p>12,5/25 КГц</p></td>
+          <td class="s900"><p>12,5/25 КГц</p></td>
+          <td class="s900a"><p>12,5/25 КГц</p></td>
+          <td class="s980"><p></p></td>
+          <td class="s990a"><p></p></td>
+        </tr>
+        <tr>
+          <td class="main-gnss"><p>Расстрояние</p></td>
+          <td class="s700a"><p>-</p></td>
+          <td class="s800a"><p>3-4 км - застроенная территория,<br>до 10 км - на открытой местности</p></td>
+          <td class="s850a"><p>3-4 км - застроенная территория,<br>до 10 км - на открытой местности</p></td>
+          <td class="s900"><p>3-4 км - застроенная территория,<br>до 10 км - на открытой местности</p></td>
+          <td class="s900a"><p>3-4 км - застроенная территория,<br>до 10 км - на открытой местности</p></td>
+          <td class="s980"><p></p></td>
+          <td class="s990a"><p></p></td>
+        </tr>
+        <!--Встроенный gsm-модем-->
+        <tr>
+          <td class="main-gnss"><p>Встроенный GSM модем</p></td>
+          <td class="s700a"><p>LTE FDD: В1/В2/В3/В4/В5/В7/В8/В12/В13/В18/В19/В20/В25/В26/В28<br>LТЕ TDD: В38/В39/В40/В41<br>UMTS: В1/В2/В4/В5/В6/В8/В19<br>GSM: В2/В3/В5/В8<br>Nano SIM карта</p></td>
+          <td class="s800a"><p>-</p></td>
+          <td class="s850a"><p>LTE FDD: В1/В2/В3/В4/В5/В7/В8/В12/В13/В18/В19/В20/В25/В26/В28<br>LТЕ TDD: В38/В39/В40/В41<br>UMTS: В1/В2/В4/В5/В6/В8/В19<br>GSM: В2/В3/В5/В8<br>Nano SIM карта</p></td>
+          <td class="s900"><p>LTE FDD: В1/В2/В3/В4/В5/В7/В8/В12/В13/В18/В19/В20/В25/В26/В28<br>LТЕ TDD: В38/В39/В40/В41<br>UMTS: В1/В2/В4/В5/В6/В8/В19<br>GSM: В2/В3/В5/В8<br>Nano SIM карта</p></td>
+          <td class="s900a"><p>LTE FDD: В1/В2/В3/В4/В5/В7/В8/В12/В13/В18/В19/В20/В25/В26/В28<br>LТЕ TDD: В38/В39/В40/В41<br>UMTS: В1/В2/В4/В5/В6/В8/В19<br>GSM: В2/В3/В5/В8<br>Nano SIM карта</p></td>
+          <td class="s980"><p></p></td>
+          <td class="s990a"><p></p></td>
+        </tr>
+        <!--Связь-->
+        <tr>
+          <td class="main-gnss"><p>Вход/выход</p></td>
+          <td class="s700a"><p>5 пин Lemo, подключает внешний блок питания и внешнюю радиостанцию Туре-С, для питания ресивера и передачи данных</p></td>
+          <td class="s800a"><p>7-pins Lemo and 5-pins Lemo интерфейс. Мультикабель с USB для соединения с ПК</p></td>
+          <td class="s850a"><p>5 пин Lemo, подключает внешний блок питания и внешнюю радиостанцию Туре-С, для питания ресивера и передачи данных</p></td>
+          <td class="s900"><p>5 пин Lemo, подключает внешний блок питания и внешнюю радиостанцию Туре-С, для питания ресивера и передачи данных</p></td>
+          <td class="s900a"><p>5 пин Lemo, подключает внешний блок питания и внешнюю радиостанцию Туре-С, для питания ресивера и передачи данных</p></td>
+          <td class="s980"><p></p></td>
+          <td class="s990a"><p></p></td>
+        </tr>
+        <tr>
+          <td class="main-gnss"><p>Bluetooth</p></td>
+          <td class="s700a"><p>V2.1 + EDR/4.0 LE</p></td>
+          <td class="s800a"><p>V2.0 + Class2/V4.1LE</p></td>
+          <td class="s850a"><p>V2.1 + EDR/4.0 LE</p></td>
+          <td class="s900"><p>V2.1 + EDR, 4.1</p></td>
+          <td class="s900a"><p>V2.1 + EDR, V4.1</p></td>
+          <td class="s980"><p></p></td>
+          <td class="s990a"><p></p></td>
+        </tr>
+        <tr>
+          <td class="main-gnss"><p>Wi-Fi</p></td>
+          <td class="s700a"><p>802.11 b/g</p></td>
+          <td class="s800a"><p>802.11 b/g</p></td>
+          <td class="s850a"><p>802.11 b/g</p></td>
+          <td class="s900"><p>802.11 b/g/n</p></td>
+          <td class="s900a"><p>802.11 b/g/n</p></td>
+          <td class="s980"><p></p></td>
+          <td class="s990a"><p></p></td>
+        </tr>
+        <tr>
+          <td class="main-gnss"><p>Web интерфейс</p></td>
+          <td class="s700a"><p>Для обновления программного обеспечения, управления состоянием и настройками, загрузки данных и др. через смартфон, планшет или другие подключенные к интернету электронные устройства</p></td>
+          <td class="s800a"><p>Для обновления программного обеспечения, управления состоянием и настройками, загрузки данных и др. через смартфон, планшет или другие подключенные к интернету электронные устройства</p></td>
+          <td class="s850a"><p>Для обновления программного обеспечения, управления состоянием и настройками, загрузки данных и др. через смартфон, планшет или другие подключенные к интернету электронные устройства</p></td>
+          <td class="s900"><p>Для обновления программного обеспечения, управления состоянием и настройками, загрузки данных и др. через смартфон, планшет или другие подключенные к интернету электронные устройства</p></td>
+          <td class="s900a"><p>Для обновления программного обеспечения, управления состоянием и настройками, загрузки данных и др. через смартфон, планшет или другие подключенные к интернету электронные устройства</p></td>
+          <td class="s980"><p></p></td>
+          <td class="s990a"><p></p></td>
+        </tr>
+        <tr>
+          <td class="main-gnss"><p>Протоколы</p></td>
+          <td class="s700a"><p>RTCM 2.3, 3.2, CMR, CMR+, ROX</p></td>
+          <td class="s800a"><p>CMR, CMR+, RTCM2.3, RTCM3.0, RTCM3.1, RTCM3.2</p></td>
+          <td class="s850a"><p>RTCM 2.3, 3.2, CMR, CMR+, ROX</p></td>
+          <td class="s900"><p>RTCM 2.3, 3.2, CMR, CMR+, RTCA</p></td>
+          <td class="s900a"><p>RTCM 2.3, 3.2, CMR, CMR+, ROX</p></td>
+          <td class="s980"><p></p></td>
+          <td class="s990a"><p></p></td>
+        </tr>
+        <tr>
+          <td class="main-gnss"><p>NMEA</p></td>
+          <td class="s700a"><p>NMEA 0183</p></td>
+          <td class="s800a"><p>GGA, ZDA, GSA, GSV, GST, VTG, RMC, GLL</p></td>
+          <td class="s850a"><p>NMEA 0183</p></td>
+          <td class="s900"><p>NMEA 0183</p></td>
+          <td class="s900a"><p>NMEA 0183</p></td>
+          <td class="s980"><p></p></td>
+          <td class="s990a"><p></p></td>
+        </tr>
+        <tr>
+          <td class="main-gnss"><p>Встроенная GNSS антенна</p></td>
+          <td class="s700a"><p>-</p></td>
+          <td class="s800a"><p>Высокоточная, мультисистемная (4х системная), микрополосная антенна с нулевым сдвигом фазового центра и встроенным подавлением многолучевости</p></td>
+          <td class="s850a"><p>-</p></td>
+          <td class="s900"><p>-</p></td>
+          <td class="s900a"><p>-</p></td>
+          <td class="s980"><p></p></td>
+          <td class="s990a"><p></p></td>
+        </tr>
+        <!--Питание-->
+        <tr>
+          <td class="main-gnss"><p>Батарея</p></td>
+          <td class="s700a"><p>Перезаряжаемая 7.2 V - 6.900 мАч</p></td>
+          <td class="s800a"><p>Перезаряжаемая 7.2 V - 6.800 мАч</p></td>
+          <td class="s850a"><p>Перезаряжаемая 7.2 V - 6.900 мАч</p></td>
+          <td class="s900"><p>2 перезаряжаемые и заменяемые батареи 7.2V - 3400 mAh</p></td>
+          <td class="s900a"><p>2 перезаряжаемые и заменяемые батареи 7.2V - 3400 mAh</p></td>
+          <td class="s980"><p></p></td>
+          <td class="s990a"><p></p></td>
+        </tr>
+        <tr>
+          <td class="main-gnss"><p>Внешнее питание</p></td>
+          <td class="s700a"><p>Внешний источник питания от 9 до 28 В постоянного тока с защитой от перенапряжения (5 пин Lemo)</p></td>
+          <td class="s800a"><p>Внешний источник питания от 9 до 18 В постоянного тока с защитой от перенапряжения (5 пин Lemo)</p></td>
+          <td class="s850a"><p>Внешний источник питания от 9 до 28 В постоянного тока с защитой от перенапряжения (5 пин Lemo)</p></td>
+          <td class="s900"><p>Внешний источник питания от 9 до 28 В постоянного тока с защитой от перенапряжения (5 пин Lemo)</p></td>
+          <td class="s900a"><p>Внешний источник питания от 9 до 28 В постоянного тока с защитой от перенапряжения (5 пин Lemo)</p></td>
+          <td class="s980"><p></p></td>
+          <td class="s990a"><p></p></td>
+        </tr>
+        <tr>
+          <td class="main-gnss"><p>Время работы</p></td>
+          <td class="s700a"><p>До 9 часов</p></td>
+          <td class="s800a"><p>До 10 часов</p></td>
+          <td class="s850a"><p>До 9 часов</p></td>
+          <td class="s900"><p>до 12 часов (2 батареи с горячей заменой)</p></td>
+          <td class="s900a"><p>до 12 часов (2 батареи с горячей заменой)</p></td>
+          <td class="s980"><p></p></td>
+          <td class="s990a"><p></p></td>
+        </tr>
+        <tr>
+          <td class="main-gnss"><p>Время зарядки</p></td>
+          <td class="s700a"><p>Обычно 4 часа</p></td>
+          <td class="s800a"><p>Обычно 4 часа</p></td>
+          <td class="s850a"><p>Обычно 4 часа</p></td>
+          <td class="s900"><p>Обычно 4 часа</p></td>
+          <td class="s900a"><p>Обычно 4 часа</p></td>
+          <td class="s980"><p></p></td>
+          <td class="s990a"><p></p></td>
+        </tr>
+        <!--Физические характеристики-->
+        <tr>
+          <td class="main-gnss"><p>Размеры</p></td>
+          <td class="s700a"><p>140 мм х 140 мм х 71 мм</p></td>
+          <td class="s800a"><p>146 мм х 146 мм х 76 мм</p></td>
+          <td class="s850a"><p>140 мм х 140 мм х 71 мм</p></td>
+          <td class="s900"><p>157 мм х 157 мм х 76 мм</p></td>
+          <td class="s900a"><p>157 мм х 157 мм х 76 мм</p></td>
+          <td class="s980"><p></p></td>
+          <td class="s990a"><p></p></td>
+        </tr>
+        <tr>
+          <td class="main-gnss"><p>Вес</p></td>
+          <td class="s700a"><p>1,10 кг</p></td>
+          <td class="s800a"><p>1,22 кг</p></td>
+          <td class="s850a"><p>1,10 кг</p></td>
+          <td class="s900"><p>1,19 кг (с одной батареей)<br>1,30 кг (с двумя батареями)</p></td>
+          <td class="s900a"><p>1,19 кг (с одной батареей)<br>1,30 кг (с двумя батареями)</p></td>
+          <td class="s980"><p></p></td>
+          <td class="s990a"><p></p></td>
+        </tr>
+        <tr>
+          <td class="main-gnss"><p>Рабочая температура</p></td>
+          <td class="s700a"><p>-30°С до 65°С</p></td>
+          <td class="s800a"><p>-40°С до 65°С</p></td>
+          <td class="s850a"><p>-30°С до 65°С</p></td>
+          <td class="s900"><p>-40°С до 65°С</p></td>
+          <td class="s900a"><p>-40°С до 65°С</p></td>
+          <td class="s980"><p></p></td>
+          <td class="s990a"><p></p></td>
+        </tr>
+        <tr>
+          <td class="main-gnss"><p>Температура хранения</p></td>
+          <td class="s700a"><p>-40°С до 80°С</p></td>
+          <td class="s800a"><p>-40°С до 65°С</p></td>
+          <td class="s850a"><p>-40°С до 80°С</p></td>
+          <td class="s900"><p>-40°С до 80°С</p></td>
+          <td class="s900a"><p>-40°С до 80°С</p></td>
+          <td class="s980"><p></p></td>
+          <td class="s990a"><p></p></td>
+        </tr>
+        <tr>
+          <td class="main-gnss"><p>Пыле- влагозащита</p></td>
+          <td class="s700a"><p>IP67</p></td>
+          <td class="s800a"><p>IP67</p></td>
+          <td class="s850a"><p>IP67</p></td>
+          <td class="s900"><p>IP67</p></td>
+          <td class="s900a"><p>IP67</p></td>
+          <td class="s980"><p></p></td>
+          <td class="s990a"><p></p></td>
+        </tr>
+        <tr>
+          <td class="main-gnss"><p>Защита от падения</p></td>
+          <td class="s700a"><p>Выдерживает падение на вехе 2 м на бетонный пол</p></td>
+          <td class="s800a"><p>Выдерживает падение на вехе 2 м на бетонный пол</p></td>
+          <td class="s850a"><p>Выдерживает падение на вехе 2 м на бетонный пол</p></td>
+          <td class="s900"><p>Выдерживает падение на вехе 2 м на бетонный пол</p></td>
+          <td class="s900a"><p>Выдерживает падение на вехе 2 м на бетонный пол</p></td>
+          <td class="s980"><p></p></td>
+          <td class="s990a"><p></p></td>
+        </tr>
+        <tr>
+          <td class="main-gnss"><p>Виброзащита</p></td>
+          <td class="s700a"><p>Виброзащищен</p></td>
+          <td class="s800a"><p>Виброзащищен</p></td>
+          <td class="s850a"><p>Виброзащищен</p></td>
+          <td class="s900"><p>Виброзащищен</p></td>
+          <td class="s900a"><p>Виброзащищен</p></td>
           <td class="s980"><p></p></td>
           <td class="s990a"><p></p></td>
         </tr>
