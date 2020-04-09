@@ -56,14 +56,17 @@ document.body.addEventListener('click', () => {
 var expanded = false;
 const gnssMenu = document.getElementById('gnss-checkboxes');
 const diffButton = document.getElementById('diffBox');
+const gnssBox = document.getElementById('gnss-box');
 document.addEventListener('click', (el) => {
   if(el.target.id === 'gnss-box' || el.target.parentNode.parentNode.id  === 'gnss-checkboxes'){
     gnssMenu.style.display = 'block';
-    document.getElementById('gnss-box').innerHTML = '+&nbsp;&nbsp;&nbsp;GNSS приемники';
+    gnssBox.innerHTML = '+&nbsp;&nbsp;&nbsp;GNSS приемники';
+    gnssBox.classList.add('active-button');
     expanded = true;
   } else {
     gnssMenu.style.display = 'none';
-    document.getElementById('gnss-box').innerHTML = '&minus;&nbsp;&nbsp;&nbsp;GNSS приемники';
+    gnssBox.innerHTML = '&minus;&nbsp;&nbsp;&nbsp;GNSS приемники';
+    gnssBox.classList.remove('active-button');
     expanded = false;
   }
 })

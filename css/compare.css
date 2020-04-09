@@ -369,16 +369,10 @@ nav.stroke ul li a {
   background-color: #264f82;
   font-size: 35px;
 }
-
-.selectBox {
-  position: relative;
-  background-color: #0874b2;
+#gnss-box {
   width: 250px;
-  padding: 10px;
-  cursor: pointer;
-  color: #fff;
 }
-#clearBox, #diffBox {
+.selectBox {
   position: relative;
   background-color: #0874b2;
   width: 200px;
@@ -395,7 +389,7 @@ nav.stroke ul li a {
   transition: 0.3s;
   pointer-events: none;
 }
-.active-button {
+.selectBox:active, .active-button {
   box-shadow: 0 0 1px rgba(0,0,0,.5) inset, 0 2px 3px rgba(0,0,0,.5) inset, 0 1px 1px rgba(255,255,255,.1) !important;
 }
 .selectBox:focus span {
