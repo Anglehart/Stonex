@@ -401,8 +401,6 @@ nav.stroke ul li a {
   color: #fff;
   text-align: center;
   transition: 0.3s;
-  border-radius: 5px;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .inactive-button {
   background-color: #748793 !important;
