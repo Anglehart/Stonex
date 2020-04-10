@@ -286,6 +286,13 @@ nav.stroke ul li a {
   max-width: 1140px;
   margin: auto;
   padding-bottom: 70px;
+  overflow-y: hidden;
+  height: 90vh;
+  transition: 0.3s;
+}
+.wrapperH {
+  height: auto;
+  transition: 0.3s;
 }
 .compare-controls {
   padding: 40px 0;
@@ -299,73 +306,86 @@ nav.stroke ul li a {
 }
 .compare-wrapper table p {
   margin: 0;
+  min-width: 240px;
 }
 .compare-wrapper table td {
   font-size: 14px;
   cursor: pointer;
   border-top: 1px solid #e2e9ef;
+  display: flex;
+  align-items: center;
 }
 .compare-wrapper table tr, .compare-wrapper table tr:first-child td  {
   text-align: center;
 }
-.compare-wrapper table tr:nth-child(n+3):hover td {
+.compare-wrapper table tr {
+  display: flex;
+  transition: 0.3s;
+  max-height: 300px;
+}
+.compare-wrapper table tr:nth-child(n+2):hover td {
   background-color: #096aa2 !important;
   color: #fff;
   transition: 0.2s;
 }
-.s700a, .s800a, .s850a, .s980, .s990a, .s900a, .s900 {
+.s700a, .s800a, .s850a, .s980, .s990a, .s900a, .s900, .main-gnss {
   background-color: #0874b2;
   color: #fff;
-  width: 243px;
-  padding: 10px 10px;
-  border-left: 30px solid #e2e9ef;
+  width: 0px;
+  padding: 10px 0;
+  border-left: 0px solid #e2e9ef;
   box-sizing: content-box;
-  display: table-cell;
-  position: absolute;
-  opacity: 0;
-  z-index: -1;
+  overflow: hidden;
+  transition: 0.3s;
 }
 .main-gnss {
   background-color: #fff;
-  width: 260px;
+  color: #000;
   text-align: left;
   text-transform: uppercase;
   font-weight: 600;
-  padding: 10px 10px;
-  display: table-cell;
-  position: absolute;
-  opacity: 0;
-  z-index: -1;
-  visibility: hidden;
-  transition: 0s !important;
+  border: 0 !important;
 }
 .show-column {
-  z-index: 1;
-  visibility: visible;
-  opacity: 1;
-  position: inherit;
+  width: 241px;
+  padding: 10px 10px;
+  border-left: 25px solid #e2e9ef;
   transition: 0.3s;
+}
+.show-column:first-child {
+  width: 260px;
+}
+.hide-row {
+  max-height: 0px !important;
+  transition: 0.3s;
+}
+.hide-row .show-column {
+  padding: 0 10px;
 }
 .main-gnss img {
   margin: 50px 50px 50px 44px;
 }
 .frow {
-  padding: 0;
-  background-color: #096aa2
+  background-color: #096aa2;
+  display: block !important;
+}
+.frow img{
+  width: 180px;
 }
 .frow h2 {
   margin: 0 20px;
 }
-.frow > div{
+.frow div:first-child{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: -10px;
+  margin-right: -10px;
 }
 .minus-button {
   width: 50px;
   height: 50px;
   background: #fff;
-  margin: -2px 0;
   background-color: #264f82;
   font-size: 35px;
 }
