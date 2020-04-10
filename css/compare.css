@@ -87,7 +87,7 @@ footer p {
 }
 
 .header-email {
-    background-image: url(../assets/email.png);
+    background-image: url('../assets/email.png');
     background-position: 15px 21px;
     border-right: 1px solid #618cbf;
     width: 163px
@@ -363,7 +363,7 @@ nav.stroke ul li a {
   padding: 0 10px;
 }
 .main-gnss img {
-  margin: 50px 50px 50px 44px;
+  margin: auto;
 }
 .frow {
   background-color: #096aa2;
@@ -381,6 +381,19 @@ nav.stroke ul li a {
   align-items: center;
   margin-top: -10px;
   margin-right: -10px;
+}
+.frow a {
+  display: block;
+  margin: -10px -10px;
+  line-height: 50px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #1b2433;
+  background-image: url('../assets/compare-arrow.png');
+  background-repeat: no-repeat;
+  background-position: 40px center;
+  border-top: 1px solid #e2e9ef;
+  min-width: 240px;
 }
 .minus-button {
   width: 50px;
