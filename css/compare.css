@@ -310,7 +310,6 @@ nav.stroke ul li a {
 }
 .compare-wrapper table td {
   font-size: 14px;
-  cursor: pointer;
   border-top: 1px solid #e2e9ef;
   display: flex;
   align-items: center;
@@ -401,6 +400,7 @@ nav.stroke ul li a {
   background: #fff;
   background-color: #264f82;
   font-size: 35px;
+  cursor: pointer;
 }
 #gnss-box {
   width: 250px;
