@@ -2,22 +2,22 @@
   background-image: url(../assets/ut50-header-background.png);
 }
 .main-image {
-  background-image: url(../assets/ut20-main-image.png);
+  background-image: url(../assets/ut30-main-image.png);
   height: 1500px;
 }
 .product-header {
   background-color: #94b3c5;
   background-position: bottom center;
-  height: 1650px;
+  height: 1570px;
 }
 .video-section {
-  background: url(../assets/ut20-video-back.png) no-repeat center bottom;
-  height: 950px;
+  background: url(../assets/ut30-video-back.png) no-repeat center top;
+  height: 1500px;
 }
 
 .price-block {
-  top: -596px;
-  left: calc(50% - 110px);
+  top: -950px;
+  left: calc(50% - 473px);
   border: solid 13px #fff;
   box-sizing: border-box;
   padding: 23px 50px;
@@ -64,7 +64,7 @@
   position: relative
 }
 #kit:before {
-  background: url(../images/ut20/kit-back.png) no-repeat left center;
+  background: url(../images/ut30/kit-back.png) no-repeat left center;
 }
 .under-table {
   text-align: center;
@@ -231,6 +231,7 @@
     margin: 0 !important;
   }
   .video-section {
+    height: 810px;
     background-color: #94b3c5;
     background-image: none !important;
   }
