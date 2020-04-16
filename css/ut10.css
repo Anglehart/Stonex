@@ -2,7 +2,7 @@
   background-image: url(../assets/ut50-header-background.png);
 }
 .main-image {
-  background-image: url(../assets/ut30-main-image.png);
+  background-image: url(../assets/ut10-main-image.png);
   height: 1500px;
 }
 .product-header {
@@ -11,8 +11,8 @@
   height: 1570px;
 }
 .video-section {
-  background: url(../assets/ut30-video-back.png) no-repeat center top;
-  height: 1500px;
+  background: url(../assets/ut10-video-back.png) no-repeat center top;
+  height: 1490px;
 }
 
 .price-block {
@@ -64,7 +64,7 @@
   position: relative
 }
 #kit:before {
-  background: url(../images/ut30/kit-back.png) no-repeat left center;
+  background: url(../images/ut10/kit-back.png) no-repeat left center;
 }
 .under-table {
   text-align: center;
@@ -82,14 +82,14 @@
 }
 .video h3 {
   text-align: center;
-  color: #8f94a1;
+  color: #8f95a5;
   font-weight: bold;
   font-size: 68px;
   margin-bottom: 15px;
 }
 .video h4 {
   text-align: center;
-  color: #0473af;
+  color: #ab8c87;
   font-size: 50px;
 }
 .video h4 span {
@@ -97,7 +97,7 @@
 }
 .video p {
   text-align: center;
-  color: #0473af;
+  color: #ab8c87;
   font-size: 22px;
 }
 .video div{
