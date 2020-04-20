@@ -480,3 +480,13 @@ nav.stroke ul li a {
 input:disabled+label {
   color: #ccc;
 }
+#controller-table .frow {
+  height: 240px;
+}
+#controller-table .frow img {
+  width: auto;
+  height: 150px
+}
+#controller-table .frow a {
+  margin: 9px -10px;
+}
