@@ -103,7 +103,7 @@
         <div class="selectBox inactive-button" id="diffBox" onclick="showDiff()">Только отличия</div>
       </div>
       <div id="tablesWrapper">
-      <table>
+      <table id="gnss-table">
         <tr>
           <td class="main-gnss"><img src="../assets/compare-icon.png" alt=""></td>
           <td class="s700a frow">
@@ -532,7 +532,7 @@
       </table>
 
       <!--Сравнение контроллеров-->
-      <table>
+      <table id="controller-table">
         <tr>
           <td class="main-controller"><img src="../assets/compare-icon.png" alt=""></td>
           <td class="s40 frow">
@@ -575,6 +575,281 @@
           <td class="ut20"><p>lntel ApolloLake N3350 1.1 ГГц<br>разгон до 2.4 ГГц</p></td>
           <td class="ut30"><p>Qualcomm MSM8953<br>Octa-Core 2.2 ГГц</p></td>
           <td class="ut50"><p>Intel Skylake i5-6200 2.3 ГГц<br>разгон до 2.8 ГГц</p></td>
+        </tr>
+        <tr>
+          <td class="main-controller"><p>Операционная система</p></td>
+          <td class="s40"><p></p></td>
+          <td class="s4ii"><p></p></td>
+          <td class="ut10"><p></p></td>
+          <td class="ut20"><p></p></td>
+          <td class="ut30"><p></p></td>
+          <td class="ut50"><p>Windows 10 Enterprise 64 bit</p></td>
+        </tr>
+        <tr>
+          <td class="main-controller"><p>Оперативная память</p></td>
+          <td class="s40"><p></p></td>
+          <td class="s4ii"><p></p></td>
+          <td class="ut10"><p></p></td>
+          <td class="ut20"><p></p></td>
+          <td class="ut30"><p></p></td>
+          <td class="ut50"><p>8 ГБ</p></td>
+        </tr>
+        <tr>
+          <td class="main-controller"><p>Встроенная память</p></td>
+          <td class="s40"><p></p></td>
+          <td class="s4ii"><p></p></td>
+          <td class="ut10"><p></p></td>
+          <td class="ut20"><p></p></td>
+          <td class="ut30"><p></p></td>
+          <td class="ut50"><p>128 ГБ SSD</p></td>
+        </tr>
+        <tr>
+          <td class="main-controller"><p>Фронтальная камера</p></td>
+          <td class="s40"><p></p></td>
+          <td class="s4ii"><p></p></td>
+          <td class="ut10"><p></p></td>
+          <td class="ut20"><p></p></td>
+          <td class="ut30"><p></p></td>
+          <td class="ut50"><p>8 МП</p></td>
+        </tr>
+        <tr>
+          <td class="main-controller"><p>Основная камера</p></td>
+          <td class="s40"><p></p></td>
+          <td class="s4ii"><p></p></td>
+          <td class="ut10"><p></p></td>
+          <td class="ut20"><p></p></td>
+          <td class="ut30"><p></p></td>
+          <td class="ut50"><p>2 МП</p></td>
+        </tr>
+        <!--Дисплей-->
+        <tr>
+          <td class="main-controller"><p>Диагональ дисплея</p></td>
+          <td class="s40"><p></p></td>
+          <td class="s4ii"><p></p></td>
+          <td class="ut10"><p></p></td>
+          <td class="ut20"><p></p></td>
+          <td class="ut30"><p></p></td>
+          <td class="ut50"><p>10.1"</p></td>
+        </tr>
+        <tr>
+          <td class="main-controller"><p>Разрешение</p></td>
+          <td class="s40"><p></p></td>
+          <td class="s4ii"><p></p></td>
+          <td class="ut10"><p></p></td>
+          <td class="ut20"><p></p></td>
+          <td class="ut30"><p></p></td>
+          <td class="ut50"><p>1280 x 800 VGA</p></td>
+        </tr>
+        <tr>
+          <td class="main-controller"><p>Яркость</p></td>
+          <td class="s40"><p></p></td>
+          <td class="s4ii"><p></p></td>
+          <td class="ut10"><p></p></td>
+          <td class="ut20"><p></p></td>
+          <td class="ut30"><p></p></td>
+          <td class="ut50"><p>800 Nit</p></td>
+        </tr>
+        <tr>
+          <td class="main-controller"><p>Сенсор</p></td>
+          <td class="s40"><p></p></td>
+          <td class="s4ii"><p></p></td>
+          <td class="ut10"><p></p></td>
+          <td class="ut20"><p></p></td>
+          <td class="ut30"><p></p></td>
+          <td class="ut50"><p>Емкостной 10-ти точечный</p></td>
+        </tr>
+        <!--Связь-->
+        <tr>
+          <td class="main-controller"><p>GSM</p></td>
+          <td class="s40"><p></p></td>
+          <td class="s4ii"><p></p></td>
+          <td class="ut10"><p></p></td>
+          <td class="ut20"><p></p></td>
+          <td class="ut30"><p></p></td>
+          <td class="ut50"><p>GSM, WCDMA, LTE</p></td>
+        </tr>
+        <tr>
+          <td class="main-controller"><p>Bluetooth</p></td>
+          <td class="s40"><p></p></td>
+          <td class="s4ii"><p></p></td>
+          <td class="ut10"><p></p></td>
+          <td class="ut20"><p></p></td>
+          <td class="ut30"><p></p></td>
+          <td class="ut50"><p>V4.2</p></td>
+        </tr>
+        <tr>
+          <td class="main-controller"><p>Wi-Fi</p></td>
+          <td class="s40"><p></p></td>
+          <td class="s4ii"><p></p></td>
+          <td class="ut10"><p></p></td>
+          <td class="ut20"><p></p></td>
+          <td class="ut30"><p></p></td>
+          <td class="ut50"><p>802.11 a/b/g/n/ac</p></td>
+        </tr>
+        <tr>
+          <td class="main-controller"><p>NFC</p></td>
+          <td class="s40"><p></p></td>
+          <td class="s4ii"><p></p></td>
+          <td class="ut10"><p></p></td>
+          <td class="ut20"><p></p></td>
+          <td class="ut30"><p></p></td>
+          <td class="ut50"><p>Да</p></td>
+        </tr>
+        <tr>
+          <td class="main-controller"><p>GNSS</p></td>
+          <td class="s40"><p></p></td>
+          <td class="s4ii"><p></p></td>
+          <td class="ut10"><p></p></td>
+          <td class="ut20"><p></p></td>
+          <td class="ut30"><p></p></td>
+          <td class="ut50"><p>Поддержка U-Blох M8N:<br>GPS/GLONASS/Beidou</p></td>
+        </tr>
+        <tr>
+          <td class="main-controller"><p>Гироскоп</p></td>
+          <td class="s40"><p></p></td>
+          <td class="s4ii"><p></p></td>
+          <td class="ut10"><p></p></td>
+          <td class="ut20"><p></p></td>
+          <td class="ut30"><p></p></td>
+          <td class="ut50"><p>Да</p></td>
+        </tr>
+        <tr>
+          <td class="main-controller"><p>Компас</p></td>
+          <td class="s40"><p></p></td>
+          <td class="s4ii"><p></p></td>
+          <td class="ut10"><p></p></td>
+          <td class="ut20"><p></p></td>
+          <td class="ut30"><p></p></td>
+          <td class="ut50"><p>Да</p></td>
+        </tr>
+        <tr>
+          <td class="main-controller"><p>Акселерометр</p></td>
+          <td class="s40"><p></p></td>
+          <td class="s4ii"><p></p></td>
+          <td class="ut10"><p></p></td>
+          <td class="ut20"><p></p></td>
+          <td class="ut30"><p></p></td>
+          <td class="ut50"><p>Да</p></td>
+        </tr>
+        <!--Интерфейс-->
+        <tr>
+          <td class="main-controller"><p>TF слот</p></td>
+          <td class="s40"><p></p></td>
+          <td class="s4ii"><p></p></td>
+          <td class="ut10"><p></p></td>
+          <td class="ut20"><p></p></td>
+          <td class="ut30"><p></p></td>
+          <td class="ut50"><p>Поддержка microSD</p></td>
+        </tr>
+        <tr>
+          <td class="main-controller"><p>USB интерфейс</p></td>
+          <td class="s40"><p></p></td>
+          <td class="s4ii"><p></p></td>
+          <td class="ut10"><p></p></td>
+          <td class="ut20"><p></p></td>
+          <td class="ut30"><p></p></td>
+          <td class="ut50"><p>USB 2.0, USB 3.0</p></td>
+        </tr>
+        <tr>
+          <td class="main-controller"><p>HDMI</p></td>
+          <td class="s40"><p></p></td>
+          <td class="s4ii"><p></p></td>
+          <td class="ut10"><p></p></td>
+          <td class="ut20"><p></p></td>
+          <td class="ut30"><p></p></td>
+          <td class="ut50"><p>Type-A</p></td>
+        </tr>
+        <tr>
+          <td class="main-controller"><p>Разъем для GNSS антенны</p></td>
+          <td class="s40"><p></p></td>
+          <td class="s4ii"><p></p></td>
+          <td class="ut10"><p></p></td>
+          <td class="ut20"><p></p></td>
+          <td class="ut30"><p></p></td>
+          <td class="ut50"><p>Да</p></td>
+        </tr>
+        <!--Питание-->
+        <tr>
+          <td class="main-controller"><p>Батарея</p></td>
+          <td class="s40"><p></p></td>
+          <td class="s4ii"><p></p></td>
+          <td class="ut10"><p></p></td>
+          <td class="ut20"><p></p></td>
+          <td class="ut30"><p></p></td>
+          <td class="ut50"><p>2x Литий-ионная полимерная батарея - 2900 мАч с горячей заменой</p></td>
+        </tr>
+        <tr>
+          <td class="main-controller"><p>Время работы</p></td>
+          <td class="s40"><p></p></td>
+          <td class="s4ii"><p></p></td>
+          <td class="ut10"><p></p></td>
+          <td class="ut20"><p></p></td>
+          <td class="ut30"><p></p></td>
+          <td class="ut50"><p>До 8 часов</p></td>
+        </tr>
+        <!--Физические параметры-->
+        <tr>
+          <td class="main-controller"><p>Размеры</p></td>
+          <td class="s40"><p></p></td>
+          <td class="s4ii"><p></p></td>
+          <td class="ut10"><p></p></td>
+          <td class="ut20"><p></p></td>
+          <td class="ut30"><p></p></td>
+          <td class="ut50"><p>294 (W) х 21,5 (D) х 198 (Н) мм</p></td>
+        </tr>
+        <tr>
+          <td class="main-controller"><p>Вес</p></td>
+          <td class="s40"><p></p></td>
+          <td class="s4ii"><p></p></td>
+          <td class="ut10"><p></p></td>
+          <td class="ut20"><p></p></td>
+          <td class="ut30"><p></p></td>
+          <td class="ut50"><p>1,54 кг (с двумя батареями)</p></td>
+        </tr>
+        <tr>
+          <td class="main-controller"><p>Класс защиты</p></td>
+          <td class="s40"><p></p></td>
+          <td class="s4ii"><p></p></td>
+          <td class="ut10"><p></p></td>
+          <td class="ut20"><p></p></td>
+          <td class="ut30"><p></p></td>
+          <td class="ut50"><p>IP68</p></td>
+        </tr>
+        <tr>
+          <td class="main-controller"><p>Высота падения</p></td>
+          <td class="s40"><p></p></td>
+          <td class="s4ii"><p></p></td>
+          <td class="ut10"><p></p></td>
+          <td class="ut20"><p></p></td>
+          <td class="ut30"><p></p></td>
+          <td class="ut50"><p>1.2 м на паркет в рабочем состоянии</p></td>
+        </tr>
+        <tr>
+          <td class="main-controller"><p>Рабочая температура</p></td>
+          <td class="s40"><p></p></td>
+          <td class="s4ii"><p></p></td>
+          <td class="ut10"><p></p></td>
+          <td class="ut20"><p></p></td>
+          <td class="ut30"><p></p></td>
+          <td class="ut50"><p>-20°С до +55°С</p></td>
+        </tr>
+        <tr>
+          <td class="main-controller"><p>Температура хранения</p></td>
+          <td class="s40"><p></p></td>
+          <td class="s4ii"><p></p></td>
+          <td class="ut10"><p></p></td>
+          <td class="ut20"><p></p></td>
+          <td class="ut30"><p></p></td>
+          <td class="ut50"><p>-40°С до +70°С</p></td>
+        </tr>
+        <tr>
+          <td class="main-controller"><p>MIL-STD</p></td>
+          <td class="s40"><p></p></td>
+          <td class="s4ii"><p></p></td>
+          <td class="ut10"><p></p></td>
+          <td class="ut20"><p></p></td>
+          <td class="ut30"><p></p></td>
+          <td class="ut50"><p>MIL-STD-810G<br>MIL-STD-461F</p></td>
         </tr>
       </table>
       </div>

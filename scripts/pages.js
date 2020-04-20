@@ -223,6 +223,22 @@ function checboxCounter() {
   if(counterContr === 0 && counterGnss === 0) {
     document.querySelector('.compare-wrapper').classList.remove('wrapperH');
   }
+  changePageHeight();
+}
+
+function changePageHeight() {
+  let hideGnss = true;
+  document.querySelectorAll('#gnss-table td').forEach((item) => {
+    if (item.classList.contains('show-column')) { hideGnss = false; }
+  });
+  document.querySelectorAll('#gnss-table tr').forEach((item) => {
+    if (hideGnss) {
+      item.classList.add('hide-row-fast')
+    } else {
+      item.classList.remove('hide-row-fast')
+    }
+  })
+
 }
 
 function enableColumn(id) {

@@ -291,7 +291,8 @@ nav.stroke ul li a {
   margin: auto;
   padding-bottom: 70px;
   overflow-y: hidden;
-  height: 90vh;
+  height: calc(100vh - 642px);
+  min-height: 280px;
   transition: 0.3s;
 }
 .wrapperH {
@@ -323,7 +324,7 @@ nav.stroke ul li a {
 }
 .compare-wrapper table tr {
   display: flex;
-  transition: 0.3s;
+  /*transition: 0.3s;*/
   max-height: 300px;
 }
 .compare-wrapper table tr:nth-child(n+2):hover td {
@@ -371,6 +372,10 @@ nav.stroke ul li a {
 .hide-row {
   max-height: 0px !important;
   transition: 0.3s;
+}
+.hide-row-fast {
+  transition-delay: 0.3s;
+  max-height: 0px !important;
 }
 .hide-row .show-column {
   padding: 0 10px;
