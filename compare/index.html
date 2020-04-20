@@ -86,9 +86,23 @@
             </div>
           </div>
         </form>
+        <form>
+          <div class="multiselect">
+            <div class="selectBox" id="controller-box">&minus;&nbsp;&nbsp;&nbsp;Контроллеры</div>
+            <div id="controller-checkboxes">
+              <label for="s40"><input type="checkbox" id="s40" />S40</label>
+              <label for="s4ii"><input type="checkbox" id="s4ii" />S4II</label>
+              <label for="ut10"><input type="checkbox" id="ut10" />UT10</label>
+              <label for="ut20"><input type="checkbox" id="ut20" />UT20</label>
+              <label for="ut30"><input type="checkbox" id="ut30" />UT30</label>
+              <label for="ut50"><input type="checkbox" id="ut50" />UT50</label>
+            </div>
+          </div>
+        </form>
         <div class="selectBox" id="clearBox">Очистить сравнение</div>
         <div class="selectBox inactive-button" id="diffBox" onclick="showDiff()">Только отличия</div>
       </div>
+      <div id="tablesWrapper">
       <table>
         <tr>
           <td class="main-gnss"><img src="../assets/compare-icon.png" alt=""></td>
@@ -516,6 +530,54 @@
           <td class="s990a"><p></p></td>
         </tr>
       </table>
+
+      <!--Сравнение контроллеров-->
+      <table>
+        <tr>
+          <td class="main-controller"><img src="../assets/compare-icon.png" alt=""></td>
+          <td class="s40 frow">
+            <div><h2>S40</h2><div class="minus-button" id="s40m">&minus;</div></div>
+            <div><img src="../images/compare/s40.png" alt=""></div>
+            <a href="../catalog/s40" target="_blank">Перейти к товару...</a>
+          </td>
+          <td class="s4ii frow">
+            <div><h2>S4II</h2><div class="minus-button" id="s4iim">&minus;</div></div>
+            <div><img src="../images/compare/s4ii.png" alt="S700A"></div>
+            <a href="../catalog/s4ii" target="_blank">Перейти к товару...</a>
+          </td>
+          <td class="ut10 frow">
+            <div><h2>UT10</h2><div class="minus-button" id="ut10m">&minus;</div></div>
+            <div><img src="../images/compare/ut10.png" alt=""></div>
+            <a href="../catalog/ut10" target="_blank">Перейти к товару...</a>
+          </td>
+          <td class="ut20 frow">
+            <div><h2>UT20</h2><div class="minus-button" id="ut20m">&minus;</div></div>
+            <div><img src="../images/compare/ut20.png" alt=""></div>
+            <a href="../catalog/ut20" target="_blank">Перейти к товару...</a>
+          </td>
+          <td class="ut30 frow">
+            <div><h2>UT30</h2><div class="minus-button" id="ut30m">&minus;</div></div>
+            <div><img src="../images/compare/ut30.png" alt=""></div>
+            <a href="../catalog/ut30" target="_blank">Перейти к товару...</a>
+          </td>
+          <td class="ut50 frow">
+            <div><h2>UT50</h2><div class="minus-button" id="ut50m">&minus;</div></div>
+            <div><img src="../images/compare/ut50.png" alt=""></div>
+            <a href="../catalog/ut50" target="_blank">Перейти к товару...</a>
+          </td>
+        </tr>
+        <!--Основные характеристики-->
+        <tr>
+          <td class="main-controller"><p>Процессор</p></td>
+          <td class="s40"><p>Qualcomm Snapdragon<br>Quad-Core 1.1 ГГц</p></td>
+          <td class="s4ii"><p>TI Sitara AM335x 1GHz</p></td>
+          <td class="ut10"><p>Qualcomm MSM8953<br>Octa-Core 2.2 ГГц</p></td>
+          <td class="ut20"><p>lntel ApolloLake N3350 1.1 ГГц<br>разгон до 2.4 ГГц</p></td>
+          <td class="ut30"><p>Qualcomm MSM8953<br>Octa-Core 2.2 ГГц</p></td>
+          <td class="ut50"><p>Intel Skylake i5-6200 2.3 ГГц<br>разгон до 2.8 ГГц</p></td>
+        </tr>
+      </table>
+      </div>
     </div>
   </section>
   <footer>

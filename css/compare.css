@@ -6,7 +6,7 @@ header {
     background-color: #1a2432
 }
 
-.main-gnss-image,.product-header {
+.main-gnss-image, .product-header, .main-controller-image, {
     height: 1455px;
     background-position: center;
     background-repeat: no-repeat
@@ -282,6 +282,10 @@ nav.stroke ul li a {
 .compare-section {
   background: #e2e9ef;
 }
+#tablesWrapper {
+  display: flex;
+  overflow: hidden;
+}
 .compare-wrapper {
   max-width: 1140px;
   margin: auto;
@@ -337,7 +341,17 @@ nav.stroke ul li a {
   overflow: hidden;
   transition: 0.3s;
 }
-.main-gnss {
+.s40, .s4ii, .ut10, .ut20, .ut30, .ut50, .main-controller {
+  width: 0;
+  background-color: #0874b2;
+  color: #fff;
+  padding: 10px 0;
+  border-left: 0px solid #e2e9ef;
+  box-sizing: content-box;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.main-gnss, .main-controller {
   background-color: #fff;
   color: #000;
   text-align: left;
@@ -361,7 +375,7 @@ nav.stroke ul li a {
 .hide-row .show-column {
   padding: 0 10px;
 }
-.main-gnss img {
+.main-gnss img, .main-controller img {
   margin: auto;
 }
 .frow {
@@ -437,24 +451,24 @@ nav.stroke ul li a {
   top: 0;
   bottom: 0;
 }
-#gnss-checkboxes {
+#gnss-checkboxes, #controller-checkboxes {
   display: none;
   position: absolute;
   background-color: #fff;
   width: 250px;
   z-index: 10;
 }
-#gnss-checkboxes label {
+#gnss-checkboxes label, #controller-checkboxes label {
   display: block;
   margin: 0;
   padding: 10px;
   cursor: pointer;
   border-bottom: 1px solid #c8c8c8;
 }
-#gnss-checkboxes input {
+#gnss-checkboxes input, #controller-checkboxes input {
   margin-right: 10px;
 }
-#gnss-checkboxes label:hover {
+#gnss-checkboxes label:hover, #controller-checkboxes label:hover {
   background-color: #1e90ff;
 }
 

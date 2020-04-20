@@ -53,28 +53,51 @@ document.body.addEventListener('click', () => {
 })
 
 // Выпадающий список чекбоксов
-var expanded = false;
+let gnssExpanded = false;
+let contrExpanded = false;
 const gnssMenu = document.getElementById('gnss-checkboxes');
+const contrMenu = document.getElementById('controller-checkboxes');
 const diffButton = document.getElementById('diffBox');
 const gnssBox = document.getElementById('gnss-box');
+const contrBox = document.getElementById('controller-box');
 document.addEventListener('click', (el) => {
   if(el.target.id === 'gnss-box' || el.target.parentNode.parentNode.id  === 'gnss-checkboxes'){
     gnssMenu.style.display = 'block';
     gnssBox.innerHTML = '+&nbsp;&nbsp;&nbsp;GNSS приемники';
     gnssBox.classList.add('active-button');
-    expanded = true;
+    gnssExpanded = true;
   } else {
     gnssMenu.style.display = 'none';
     gnssBox.innerHTML = '&minus;&nbsp;&nbsp;&nbsp;GNSS приемники';
     gnssBox.classList.remove('active-button');
-    expanded = false;
+    gnssExpanded = false;
+  }
+
+  if (el.target.id === 'controller-box' || el.target.parentNode.parentNode.id  === 'controller-checkboxes'){
+    contrMenu.style.display = 'block';
+    contrBox.innerHTML = '+&nbsp;&nbsp;&nbsp;Контроллеры';
+    contrBox.classList.add('active-button');
+    contrExpanded = true;
+  } else {
+    contrMenu.style.display = 'none';
+    contrBox.innerHTML = '&minus;&nbsp;&nbsp;&nbsp;Контроллеры';
+    contrBox.classList.remove('active-button');
+    contrExpanded = false;
   }
 })
 
 gnssMenu.querySelectorAll('input').forEach((item) => { item.checked = false; });
+contrMenu.querySelectorAll('input').forEach((item) => { item.checked = false; });
 
 gnssMenu.addEventListener('click', (event) => {
   if (!event.target.disabled && event.target.id){
+    document.querySelectorAll('#controller-checkboxes input').forEach((item) => {
+      disableColumn(item.id);
+      disableColumn('main-controller');
+      item.checked = false;
+      item.disabled = false;
+      item.parentNode.style.color = "#000";
+    })
     gnssMenu.querySelectorAll('input').forEach((el) => {
       if (el.checked) {
         enableColumn('main-gnss');
@@ -88,8 +111,30 @@ gnssMenu.addEventListener('click', (event) => {
   }
 });
 
+contrMenu.addEventListener('click', (event) => {
+  if (!event.target.disabled && event.target.id) {
+    document.querySelectorAll('#gnss-checkboxes input').forEach((item) => {
+      disableColumn(item.id);
+      disableColumn('main-gnss');
+      item.checked = false;
+      item.disabled = false;
+      item.parentNode.style.color = "#000";
+    })
+    contrMenu.querySelectorAll('input').forEach((el) => {
+      if (el.checked) {
+        enableColumn('main-controller');
+        enableColumn(el.id);
+        checboxCounter();
+      } else if (!el.checked){
+        disableColumn(el.id);
+        checboxCounter();
+      }
+    });
+  }
+});
+
 document.getElementById('clearBox').addEventListener('click', () => {
-  gnssMenu.querySelectorAll('input').forEach((item) => {
+  document.querySelectorAll('#gnss-checkboxes input, #controller-checkboxes input').forEach((item) => {
     item.checked = false;
     item.disabled = false;
     item.parentNode.style.color = "#000";
@@ -98,6 +143,7 @@ document.getElementById('clearBox').addEventListener('click', () => {
     document.querySelector('.compare-wrapper').classList.remove('wrapperH');
     disableColumn(item.id);
     disableColumn('main-gnss');
+    disableColumn('main-controller');
   });
 })
 
@@ -109,7 +155,7 @@ function showDiff(){
     if (i > 1) {
       let temp = [];
       item.querySelectorAll('td').forEach((elem) => {
-        if (!elem.classList.contains('main-gnss') && elem.classList.contains('show-column')){
+        if (!elem.classList.contains('main-gnss') && !elem.classList.contains('main-controller') && elem.classList.contains('show-column')){
           temp.push(elem.innerText);
         }
       });
@@ -131,12 +177,14 @@ document.querySelectorAll('.minus-button').forEach((item) => {
 })
 
 function checboxCounter() {
-  let counter = 0;
+  let counterGnss = 0;
+  let counterContr = 0;
+
   gnssMenu.querySelectorAll('input').forEach((item) => {
-    if(item.checked){ counter += 1; }
+    if(item.checked){ counterGnss += 1; }
   });
   gnssMenu.querySelectorAll('input').forEach((item) => {
-    if(counter >= 3 && !item.checked) {
+    if(counterGnss >= 3 && !item.checked) {
       item.disabled = true;
       item.parentNode.style.color = "#ccc";
     } else {
@@ -144,14 +192,35 @@ function checboxCounter() {
       item.parentNode.style.color = "#000";
     }
   });
-  if(counter > 1) {
+
+  contrMenu.querySelectorAll('input').forEach((item) => {
+    if(item.checked){ counterContr += 1; }
+  });
+  contrMenu.querySelectorAll('input').forEach((item) => {
+    if(counterContr >= 3 && !item.checked) {
+      item.disabled = true;
+      item.parentNode.style.color = "#ccc";
+    } else {
+      item.disabled = false;
+      item.parentNode.style.color = "#000";
+    }
+  });
+
+  if(counterGnss > 1 || counterContr > 1) {
     diffButton.classList.remove('inactive-button');
   } else {
     diffButton.classList.add('inactive-button');
     diffButton.classList.remove('active-button');
   }
-  if(counter === 0) {
+
+  if(counterGnss === 0) {
     disableColumn('main-gnss');
+  }
+  if(counterContr === 0) {
+    disableColumn('main-controller');
+  }
+
+  if(counterContr === 0 && counterGnss === 0) {
     document.querySelector('.compare-wrapper').classList.remove('wrapperH');
   }
 }
