@@ -439,8 +439,13 @@ nav.stroke ul li a {
   transition: 0.3s;
   pointer-events: none;
 }
-.selectBox:active, .active-button {
+.selectBox:active {
   box-shadow: 0 0 1px rgba(0,0,0,.5) inset, 0 2px 3px rgba(0,0,0,.5) inset, 0 1px 1px rgba(255,255,255,.1) !important;
+}
+.active-button {
+  box-shadow: 0 0 1px rgba(0,0,0,.5) inset, 0 2px 3px rgba(0,0,0,.5) inset, 0 1px 1px rgba(255,255,255,.1) !important;
+  color: #ccc;
+  background-color: #0874b2b3;
 }
 .selectBox:focus span {
   display: none;
