@@ -13,7 +13,7 @@ document.body.addEventListener('click', () => {
 })
 
 // Всплывющее окно
-document.getElementById("callback-button").addEventListener('click', (event) => {
+/*document.getElementById("callback-button").addEventListener('click', (event) => {
   document.getElementById("message-wrapper").classList.remove('disactive');
   document.getElementById('order-form').reset();
   document.querySelector("#form-file-message p").innerHTML = "Прикрепить реквизиты"
@@ -28,4 +28,17 @@ dropZone.addEventListener('drop', () => {
     let backSlash = dropZone.value.lastIndexOf('\\') + 1;
     document.querySelector("#form-file-message p").innerHTML = dropZone.value.slice(backSlash),
     10})
-})
+})*/
+
+/*Всплывающее сообщение формы заказа демо*/
+function demoMessage(){
+  document.getElementById('demo-message-block').classList.remove('disable');
+  document.getElementById('demo-message-block').addEventListener('click', () => {
+    closeMessage();
+  })
+  setTimeout(() => { closeMessage(); }, 2000)
+}
+function closeMessage() {
+  document.getElementById('demo-message-block').classList.add('disable');
+  document.getElementById('demo-form').reset();
+}
