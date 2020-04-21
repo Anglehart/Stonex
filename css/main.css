@@ -1,0 +1,109 @@
+.main-image, .product-header {
+  background-image: url(../images/main/header-background.png);
+  height: 1223px;
+}
+.video-section {
+  background: url(../assets/s700a-video-back.png) no-repeat center;
+}
+.video-section .row {
+  background: url(../assets/s700a-video-back-product.png) no-repeat 650px bottom
+}
+.main-image h1 {
+  margin-top: calc(50% - 25px);
+}
+.gnss-products, .contr-products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.gnss-products {
+  border-bottom: 1px solid #d4bfbc;
+  padding-bottom: 30px;
+}
+.products {
+  background: linear-gradient(to bottom, #fcf2ec, #b6c7d6);
+}
+.products h2 {
+  color: #ad8c88;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 50px;
+}
+.products-inner {
+  max-width: 1140px;
+  margin: auto !important;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.product-block {
+  display: block;
+  width: 200px;
+  padding-top: 150px;
+  background-position: bottom 85px center;
+  background-repeat: no-repeat;
+  text-align: center;
+  transition: 0.3s;
+  color: #000;
+  text-decoration: none;
+  margin: 0 40px;
+}
+.contr-products .product-block {
+  padding-top: 230px;
+}
+
+.gnss-products .product-block:nth-child(1), .gnss-products .product-block:nth-child(2) {
+  background-image: url(../images/main/2.png);
+}
+.gnss-products .product-block:nth-child(3), .gnss-products .product-block:nth-child(4) {
+  background-image: url(../images/main/3.png);
+}
+.gnss-products .product-block:nth-child(5) {
+  background-image: url(../images/main/4.png);
+}
+.contr-products .product-block:nth-child(1) {
+  background-image: url(../images/main/5.png);
+}
+.contr-products .product-block:nth-child(2) {
+  background-image: url(../images/main/6.png);
+}
+.contr-products .product-block:nth-child(4) {
+  background-image: url(../images/main/7.png);
+}
+.contr-products .product-block:nth-child(5) {
+  background-image: url(../images/main/24.png);
+  background-size: 100%;
+}
+.contr-products .product-block:nth-child(6) {
+  background-image: url(../images/main/8.png);
+}
+.contr-products .product-block:nth-child(7) {
+  background-image: url(../images/main/9.png);
+  background-size: 100%;
+}
+.product-block:hover {
+  color: #007bc0;
+  text-decoration: none;
+}
+.product-block p {
+  box-shadow: transparent 0px 0px 0px 2px;
+  transition: 0.3s;
+  font-size: 21px;
+}
+.product-block:hover p {
+  box-shadow: #007bc0 0px 0px 0px 2px;
+  box-sizing: content-box;
+  border-radius: 3px;
+}
+.product-block span {
+  font-size: 16px;
+}
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+
+@media (max-width:991px) {
+
+}
