@@ -103,7 +103,7 @@
   height: 0;
 }
 .disable {
-  display: none;
+  display: none !important;
 }
 .demo {
   background-color: #0874b2;
@@ -116,9 +116,9 @@
   text-align: center;
   color: #fff;
 }
-.demo h3 {
-  font-size: 60px;
-  font-weight: 600;
+.demo h3, .steps h3 {
+  font-size: 55px;
+  font-weight: 700;
 }
 .demo-inner p {
   margin: 40px 0;
@@ -167,7 +167,90 @@
   left: calc(50% - 200px);
   top: calc(50% - 125px);
 }
+.steps {
+  background: linear-gradient(to bottom, #94b3c6, #fff);
+  background-image: url(../images/main/grass.png);
+  background-position: bottom -30px center;
+  background-repeat: no-repeat;
+}
+.steps-wrapper{
+  max-width: 1140px;
+  margin: auto !important;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: #fff;
+}
+.steps-inner {
+  display: flex;
+  justify-content: space-around;
+  background-image: url(../images/main/19.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  flex-wrap: wrap;
+}
+.step {
+  width: 225px;
+  color: #007bc2;
+  padding-top: 120px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  font-weight: 500;
+  font-size: 17px;
+  margin: 20px;
+}
+.step p {
+  font-size: 23px;
+  font-weight: bold;
+  margin: 0;
+}
+.steps-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+.steps-buttons div {
+  text-decoration: underline;
+  margin: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 8px 34px;
+  font-weight: 600;
+}
+.active-button {
+  color: #007bc2;
+  text-decoration: none !important;
+  border: 2px solid #007bc2;
+  border-radius: 3px;
+}
+#your-actions .step:nth-child(1) {background-image: url(../images/main/20.png)}
+#your-actions .step:nth-child(2) {background-image: url(../images/main/21.png)}
+#your-actions .step:nth-child(3) {background-image: url(../images/main/22.png)}
+#your-actions .step:nth-child(4) {background-image: url(../images/main/23.png)}
 
-@media (max-width:991px) {
+#our-actions .step:nth-child(1) {background-image: url(../images/main/14.png)}
+#our-actions .step:nth-child(2) {background-image: url(../images/main/15.png)}
+#our-actions .step:nth-child(3) {background-image: url(../images/main/16.png)}
+#our-actions .step:nth-child(4) {background-image: url(../images/main/17.png)}
 
+#steps-callback {
+  background-color: #007bc0;
+  border: 8px solid #fff;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 30px;
+  box-shadow: 0 0 7px rgba(0,0,0,0.5);
+  margin: 50px 0;
+}
+.finish-text {
+  text-align: justify;
+  margin: 30px 0;
+  font-size: 18px;
+}
+
+@media (max-width:1140px) {
+  .steps-inner {
+    background-image: none;
+  }
 }

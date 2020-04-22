@@ -30,7 +30,7 @@ dropZone.addEventListener('drop', () => {
     10})
 })*/
 
-/*Всплывающее сообщение формы заказа демо*/
+// Всплывающее сообщение формы заказа демо
 function demoMessage(){
   document.getElementById('demo-message-block').classList.remove('disable');
   document.getElementById('demo-message-block').addEventListener('click', () => {
@@ -42,3 +42,17 @@ function closeMessage() {
   document.getElementById('demo-message-block').classList.add('disable');
   document.getElementById('demo-form').reset();
 }
+
+// Смена контента в блоке шагов
+document.getElementById('your-button').addEventListener('click', () => {
+  document.getElementById('your-button').classList.add('active-button');
+  document.getElementById('your-actions').classList.remove('disable');
+  document.getElementById('our-button').classList.remove('active-button');
+  document.getElementById('our-actions').classList.add('disable');
+})
+document.getElementById('our-button').addEventListener('click', () => {
+  document.getElementById('our-button').classList.add('active-button');
+  document.getElementById('our-actions').classList.remove('disable');
+  document.getElementById('your-button').classList.remove('active-button');
+  document.getElementById('your-actions').classList.add('disable');  
+})
